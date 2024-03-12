@@ -2,7 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-
 html {
   font-family: Geomanist;
+}
+
+.faq.active .ans {
+  @apply max-h-[300px];
+}
+
+@layer utilities {
+  .border-gradient {
+    border-image: linear-gradient(120deg, #fa1d8f, #8250a3, #2f57aa, #175ead);
+    border-image-slice: 1;
+  }
+}
+@keyframes expandWidth {
+  0% {
+    width: 0;
+  }
+  25% {
+    width: 100%;
+  }
+  75%{
+    width: 0;
+  }
+  100%{
+    width: 100%;
+  }
+}
+@layer utilities {
+  .animate-expand-width {
+    animation: expandWidth 2s ease-in-out infinite;
+  }
+}
+
+body{
+  
 }
