@@ -4,10 +4,10 @@ module.exports = {
   theme: {
     fontFamily: {
       Regular: "Geomanist Medium,sans-serif",
-      Medium: "Geomanist Medium, sans-serif",
+      Medium: "Geomanist Medium,font-semibold, sans-serif",
       Bold: "Geomanist Bold, sans-serif",
       Light: "Geomanist Light, sans-serif",
-      Book: "Geomanist Book, font-semibold, sans-serif",
+      Book: "Geomanist Book, font-bold, sans-serif",
       Libre: "Libre Baskerville Regular sans-serif",
     },
     extend: {
