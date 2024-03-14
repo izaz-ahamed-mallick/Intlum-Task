@@ -7,7 +7,7 @@ module.exports = {
       Medium: "Geomanist Medium, sans-serif",
       Bold: "Geomanist Bold, sans-serif",
       Light: "Geomanist Light, sans-serif",
-      Book: "Geomanist Book, sans-serif",
+      Book: "Geomanist Book, font-semibold, sans-serif",
       Libre: "Libre Baskerville Regular sans-serif",
     },
     extend: {
