@@ -1,1894 +1,1465 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Artflare||Interior</title>
-    <link rel="stylesheet" href="main.css" />
-    <script
-      src="https://kit.fontawesome.com/466c49389d.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <!-- Header-Section -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artflare||Interior</title>
+  <link rel="stylesheet" href="main.css" />
+  <script src="https://kit.fontawesome.com/466c49389d.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
 
-    <header
-      class="relative z-10 h-[55vh] w-full overflow-hidden bg-[url('./Images/BG/Allbg.png')] bg-cover xl:h-[92vh] xl:bg-cover 2xl:h-[900px] 2xl:w-[100%]"
-    >
-      <!-- Navbar -->
+<body>
+  <!-- Header-Section -->
 
-      <nav
-        class="container mx-auto flex justify-between pt-[20px] lg:pt-[30px] xl:pt-[40px] 2xl:pt-[32px]"
-      >
+  <header
+    class="relative z-10 h-[55vh] w-full overflow-hidden bg-[url('./Images/BG/Allbg.png')] bg-cover xl:h-[92vh] xl:bg-cover 2xl:h-[900px] 2xl:w-[100%]">
+    <!-- Navbar -->
+
+    <nav class="container mx-auto flex justify-between pt-[20px] lg:pt-[30px] xl:pt-[40px] 2xl:pt-[32px]">
+      <div class="flex w-full items-center lg:gap-[40px] xl:gap-[50px] 2xl:gap-[80px]">
+        <div class="logo w-[150px] lg:w-[130px]">
+          <img class="h-full" src="./Images/Logo (1).png" alt="" />
+        </div>
         <div
-          class="flex w-full items-center lg:gap-[40px] xl:gap-[50px] 2xl:gap-[80px]"
-        >
-          <div class="logo w-[150px] lg:w-[130px]">
-            <img class="h-full" src="./Images/Logo (1).png" alt="" />
-          </div>
+          class="navlist absolute right-[-100%] top-[14%] transition-all duration-1000 z-50 flex w-full flex-1 flex-col items-center bg-gradient-angle py-[20px] xl:relative xl:right-0 xl:flex-row xl:justify-between xl:bg-none xl:py-[0] 2xl:relative 2xl:flex-row 2xl:justify-between 2xl:py-[0]">
+          <ul
+            class="flex h-full flex-col items-center text-white xl:text-black 2xl:text-black gap-2 font-Medium text-[14px] lg:text-[12px] xl:flex-row xl:gap-[30px] 2xl:flex-row 2xl:gap-[62px] 2xl:text-[16px]">
+            <li><a class="" href="#">HOME</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
           <div
-            class="navlist absolute right-[-100%] top-[14%] z-50 flex w-full flex-1 flex-col items-center bg-gradient-angle py-[20px] xl:relative xl:right-0 xl:flex-row xl:justify-between xl:bg-none xl:py-[0] 2xl:relative 2xl:flex-row 2xl:justify-between 2xl:py-[0]"
-          >
-            <ul
-              class="flex h-full flex-col items-center gap-3 font-Medium text-[14px] lg:text-[12px] xl:flex-row xl:gap-[30px] 2xl:flex-row 2xl:gap-[62px] 2xl:text-[16px]"
-            >
-              <li><a class="" href="#">HOME</a></li>
-              <li><a href="#">ABOUT US</a></li>
-              <li><a href="#">SERVICES</a></li>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">BLOG</a></li>
-              <li><a href="#">CONTACT</a></li>
-            </ul>
-            <div
-              class="contact z-10 flex items-center gap-3 font-Medium text-white lg:mr-[5%] lg:text-[14px] xl:mr-[6%] xl:text-[14px] 2xl:text-[20px]"
-            >
-              <div
-                class="flex h-[35px] w-[35px] items-center justify-center rounded-full border"
-              >
-                <i class="fa-solid fa-phone"></i>
-              </div>
-              <p>+12345566890</p>
+            class="contact z-10 flex items-center gap-3 font-Medium text-white lg:mr-[5%] lg:text-[14px] xl:mr-[6%] xl:text-[14px] 2xl:text-[20px]">
+            <div class="flex h-[35px] w-[35px] items-center justify-center rounded-full border">
+              <i class="fa-solid fa-phone"></i>
             </div>
+            <p>+12345566890</p>
           </div>
         </div>
+      </div>
 
-        <div class="baricon lg:hidden">
-          <i class="fa-solid fa-bars"></i>
-        </div>
-      </nav>
+      <div class="baricon block lg:hidden xl:hidden 2xl:hidden">
+        <i onclick="handleNav()" class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
 
-      <!-- Hero-Section -->
+    <!-- Hero-Section -->
 
-      <section class="Hero container mx-auto h-full">
-        <!-- <div class="angleImg">
+    <section class="Hero container mx-auto h-full">
+      <!-- <div class="angleImg">
         <img class="z-[-1] absolute top-0 right-0 bottom-0" src="./Images/Home/Tringle.png" alt="" />
       </div> -->
 
-        <div class="HeroContent">
-          <div
-            class="pt-[30px] leading-tight xl:w-[40%] xl:pt-[70px] 2xl:w-[40%] 2xl:pt-[150px]"
-          >
-            <h1
-              class="font-font1 pl-[4%] font-Light text-[30px] leading-8 lg:text-[50px] xl:pl-[4%] xl:leading-[50px] 2xl:pl-[2%] 2xl:text-[80px] 2xl:leading-[80px]"
-            >
-              May your <span class="font-bold">house</span> <br />
-              be your canves
-            </h1>
-            <hr
-              class="my-3 h-[4px] w-[100px] border-none bg-borderColor xl:my-6 2xl:xl:my-6"
-            />
-            <p
-              class="w-[50%] pl-[4%] text-[14px] text-secondaryText xl:w-[100%] xl:pl-[4%] xl:text-[20px] 2xl:w-[100%] 2xl:pl-[2%] 2xl:text-[30px]"
-            >
-              The Best interior Design Compnay In Kolkata
-            </p>
-            <div class="pl-[4%] xl:pl-[0] 2xl:pl-[0]">
-              <button
-                class="mt-[10px] h-[35px] w-[150px] rounded-md bg-gradient-angle font-Medium text-[10px] tracking-wide text-white drop-shadow-2xl transition-all duration-200 hover:bg-gradient-angleInvert xl:ml-[4%] xl:mt-[5%] xl:h-[60px] xl:w-[250px] xl:text-[16px] 2xl:ml-[2%] 2xl:mt-[10%] 2xl:h-[60px] 2xl:w-[250px] 2xl:text-[18px]"
-              >
-                BOOK CONSULTATION
-              </button>
-            </div>
+      <div class="HeroContent">
+        <div class="pt-[30px] leading-tight xl:w-[40%] xl:pt-[70px] 2xl:w-[40%] 2xl:pt-[150px]">
+          <h1
+            class="font-font1 pl-[4%] font-Light text-[30px] leading-8 lg:text-[50px] xl:pl-[4%] xl:leading-[50px] 2xl:pl-[2%] 2xl:text-[80px] 2xl:leading-[80px]">
+            May your <span class="font-bold">house</span> <br />
+            be your canves
+          </h1>
+          <hr class="my-3 h-[4px] w-[100px] border-none bg-borderColor xl:my-6 2xl:xl:my-6" />
+          <p
+            class="w-[50%] pl-[4%] text-[14px] text-secondaryText xl:w-[100%] xl:pl-[4%] xl:text-[20px] 2xl:w-[100%] 2xl:pl-[2%] 2xl:text-[30px]">
+            The Best interior Design Compnay In Kolkata
+          </p>
+          <div class="pl-[4%] xl:pl-[0] 2xl:pl-[0]">
+            <button
+              class="mt-[10px] h-[35px] w-[150px] rounded-md bg-gradient-angle font-Medium text-[10px] tracking-wide text-white drop-shadow-2xl transition-all duration-200 hover:bg-gradient-angleInvert xl:ml-[4%] xl:mt-[5%] xl:h-[60px] xl:w-[250px] xl:text-[16px] 2xl:ml-[2%] 2xl:mt-[10%] 2xl:h-[60px] 2xl:w-[250px] 2xl:text-[18px]">
+              BOOK CONSULTATION
+            </button>
           </div>
-          <!-- <div class="painterImag z-20 absolute right-[-2%] top-[20%]">
+        </div>
+        <!-- <div class="painterImag z-20 absolute right-[-2%] top-[20%]">
           <img src="./Images/painter.png" alt="" />
         </div> -->
-        </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- End Hero-Section -->
-    </header>
+    <!-- End Hero-Section -->
+  </header>
 
-    <!-- End Header-Section -->
+  <!-- End Header-Section -->
 
-    <!-- Free-Consultation -->
+  <!-- Free-Consultation -->
 
-    <section
-      class="absolute left-[50%] z-10 mx-auto h-auto w-[80%] translate-x-[-50%] translate-y-[-40%] rounded-md bg-white shadow-xl 2xl:container xl:left-[50%] xl:h-[200px] xl:translate-x-[-50%] xl:translate-y-[-50%] 2xl:left-[50%] 2xl:mx-auto 2xl:h-[234px] 2xl:translate-x-[-50%] 2xl:translate-y-[-50%]"
-    >
+  <section
+    class="absolute left-[50%] z-10 mx-auto h-auto w-[80%] translate-x-[-50%] translate-y-[-40%] rounded-md bg-white shadow-xl 2xl:container xl:left-[50%] xl:h-[200px] xl:translate-x-[-50%] xl:translate-y-[-50%] 2xl:left-[50%] 2xl:mx-auto 2xl:h-[234px] 2xl:translate-x-[-50%] 2xl:translate-y-[-50%]">
+    <div class="flex flex-col p-4 xl:flex-row xl:gap-[30px] xl:p-[1.5rem] 2xl:flex-row 2xl:gap-[24px] 2xl:p-[32px]">
+      <div class="left-sec">
+        <h5
+          class="mb-[12px] w-fit bg-gradientText bg-clip-text font-Libre text-[14px] text-transparent xl:text-[14px] 2xl:text-[20px]">
+          Meet Artflair
+        </h5>
+        <p class="line-clamp-4 hidden font-Light leading-tight xl:block xl:text-[30px] 2xl:block 2xl:text-[50px]">
+          Book <span class="font-bold">Free</span> <br />
+          Consultation
+        </p>
+        <p
+          class="line-clamp-4 font-Light text-[22px] leading-tight xl:hidden xl:text-[30px] 2xl:hidden 2xl:text-[50px]">
+          Book <span class="font-bold">Free</span>
+          Consultation
+        </p>
+      </div>
+      <hr
+        class="mt-[8px] h-[2px] w-[160px] border-none bg-gray-200 xl:h-[150px] xl:w-[4px] 2xl:h-[150px] 2xl:w-[4px]" />
+      <div class="right-sec w-[100%]">
+        <form action="">
+          <div class="flex w-full flex-col justify-between xl:flex-row xl:gap-10 2xl:flex-row 2xl:gap-10">
+            <div class="flex flex-1 flex-col">
+              <input
+                class="mt-4 border-b-2 pb-2 text-[12px] outline-none focus:border-borderColor xl:pl-2 xl:text-[16px] xl:placeholder:text-[14px] 2xl:text-[24px] 2xl:placeholder:text-[16px]"
+                type="text" name="Name" id="" placeholder="Enter your Name" />
+              <input
+                class="mt-4 border-b-2 pb-2 text-[12px] outline-none focus:border-borderColor xl:pl-2 xl:text-[16px] xl:placeholder:text-[14px] 2xl:text-[24px] 2xl:placeholder:text-[16px]"
+                type="text" name="Number" id="" placeholder="Enter your Number" />
+            </div>
+            <div class="flex flex-1 flex-col">
+              <input
+                class="mt-4 border-b-2 pb-2 text-[12px] outline-none focus:border-borderColor xl:pl-2 xl:text-[16px] xl:placeholder:text-[14px] 2xl:text-[24px] 2xl:placeholder:text-[16px]"
+                type="email" name="Email" id="" placeholder="Enter your Email" />
+              <input
+                class="mt-4 border-b-2 pb-2 text-[12px] outline-none focus:border-borderColor xl:pl-2 xl:text-[16px] xl:placeholder:text-[14px] 2xl:text-[24px] 2xl:placeholder:text-[16px]"
+                type="text" name="City" id="" placeholder="Enter your Current City" />
+            </div>
+            <button
+              class="mt-[5px] cursor-pointer rounded-md bg-gradient-angle2 py-[5px] font-Medium text-[14px] text-white transition-all duration-200 hover:bg-gradient-angle2Invert xl:mt-[40px] xl:h-[50px] xl:w-[170px] xl:px-[40px] xl:py-[15px] 2xl:xl:mt-[40px] 2xl:h-[50px] 2xl:w-[170px] 2xl:px-[66px] 2xl:py-[38px]">
+              SUBMIT
+            </button>
+          </div>
+          <div class="mt-3 flex gap-2 text-[12px] xl:text-[16px] 2xl:text-[16px]">
+            <input type="checkbox" name="" id="" />
+            <p class="text-gray-400">
+              I agree to the
+              <a class="text-blue-500" href="#">Terms and Conditions</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- End Free-Consultation -->
+
+  <!-- About-section -->
+  <section
+    class="relative min-h-[100vh] w-[100%] overflow-hidden bg-[#f1f5f3] pb-[70px] pt-[40px] xl:pb-[103px] 2xl:xl:pb-[103px]">
+    <div class="bgImg absolute bottom-[-8%] left-0 xl:bottom-[-9%] 2xl:bottom-[-20%]">
+      <img class="h-[100%] w-[50%]" src="./Images/Home/trasnparentAngle.png" alt="" />
+    </div>
+    <div class="container mx-auto flex gap-[40px] pt-[225px]">
+      <div class="left-sec w-[32%]">
+        <h5
+          class="mb-[12px] w-fit bg-gradientText bg-clip-text font-Libre text-[14px] text-transparent xl:pl-[5%] xl:text-[14px] 2xl:pl-[4%] 2xl:text-[20px]">
+          A Few Words
+        </h5>
+        <hr class="h-[4px] w-[100px] border-none bg-borderColor xl:my-4 xl:pl-[-6%] 2xl:my-6 2xl:pl-[-5%]" />
+        <p
+          class="font-Light text-[30px] leading-8 xl:pl-[5%] xl:text-[45px] xl:leading-[50px] 2xl:pl-[4%] 2xl:text-[70px] 2xl:leading-[70px]">
+          Welcome to <br />
+          <span class="font-bold">Artflare </span>
+        </p>
+      </div>
+
       <div
-        class="flex flex-col p-4 xl:flex-row xl:gap-[30px] xl:p-[1.5rem] 2xl:flex-row 2xl:gap-[24px] 2xl:p-[32px]"
-      >
-        <div class="left-sec">
+        class="right-sec flex w-[70%] flex-col text-secondaryText xl:flex-row xl:gap-[30px] 2xl:flex-row 2xl:justify-between 2xl:gap-[50px]">
+        <div class="xl:w-[48%] 2xl:w-[48%]">
+          <div>
+            <img class="xl:mb-[30px] xl:w-[80%] 2xl:mb-[70px] 2xl:w-[95%]" src="./Images/Home/About1.png" alt="" />
+          </div>
+          <div>
+            <h1
+              class="font-Light text-[20px] xl:text-[28px] xl:leading-8 2xl:text-[40px] 2xl:leading-[45px] 2xl:tracking-wide">
+              Why Your
+              <span class="font-Book text-boldColor">Space</span> Needs <br />
+              <span class="font-Book text-boldColor">Colors</span>
+            </h1>
+            <h4 class="font-Book text-[15px] text-boldColor xl:mt-[.5rem] xl:text-[16px] 2xl:text-[22px]">
+              Colors have the power to shift the mood, tone, and emotion of
+              your surrounds.
+            </h4>
+
+            <p class="mt-[5px] font-Light text-[14px] xl:mt-[.4rem] xl:text-[14px] 2xl:mt-[1rem] 2xl:text-[20px]">
+              The
+              <span class="font-Book text-boldColor">right color</span> can
+              turn a dull room into the most happening space instantaneously.
+              We, being the
+              <span class="font-Book text-boldColor">leading house painters in Kolkata</span>, recognize the importance
+              of
+              <span class="font-Book text-boldColor">colors</span> and offer
+              painting solutions that breathe life into your home. <br />
+
+              <span class="font-Book text-boldColor">Whether it’s indoor or outdoor,</span>
+              we make sure that your vision and style pop out through our
+              painting.
+            </p>
+          </div>
+        </div>
+
+        <div class="w-[100%] xl:w-[50%] 2xl:w-[50%]">
+          <div class="mb-[20px] xl:mb-[30px] 2xl:mb-[78px]">
+            <h1
+              class="mt-[10px] font-Light text-[20px] xl:text-[28px] xl:leading-8 2xl:text-[40px] 2xl:leading-[45px] 2xl:tracking-wide">
+              Where We Bring
+              <span class="font-Book text-boldColor">Colors </span>to <br />
+              <span class="font-Book text-boldColor">Life!</span>
+            </h1>
+            <h4 class="mt-[5px] font-Book text-[15px] text-boldColor xl:mt-[.5rem] xl:text-[16px] 2xl:text-[22px]">
+              Experience the Best Home Painting Services in Kolkata
+            </h4>
+
+            <p class="mt-[5px] font-Light text-[14px] xl:mt-[.4rem] xl:text-[14px] 2xl:mt-[1rem] 2xl:text-[20px]">
+              After providing
+              <span class="font-Book text-boldColor">interior</span> and
+              <span class="font-Book text-boldColor">exterior</span> home
+              <span class="font-Book text-boldColor">color paint solutions</span>
+              to our clients across Kolkata for a decade, Artflare has
+              fostered the ability to transform a space with the
+              <span class="font-Book text-boldColor">magic of color.</span>
+              <br />
+              From <span class="font-Book text-boldColor">houses</span> to
+              <span class="font-Book text-boldColor">commercial properties</span>, we are the most reliable
+              <span class="font-Book text-boldColor">house painting contractors</span>
+              in Kolkata equipped to transform your space while giving it a
+              char
+            </p>
+          </div>
+          <div>
+            <img class="xl:w-[80%] 2xl:w-[95%]" src="./Images/Home/About2.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End About-section -->
+
+  <!-- Contact-us-Section -->
+  <section
+    class="min-h-[10vh] w-[100%] bg-ContactBG bg-cover bg-center bg-no-repeat xl:min-h-[40vh] xl:bg-cover 2xl:h-[725px]">
+    <div class="content container mx-auto h-full py-[60px] xl:py-[80px] 2xl:flex 2xl:flex-col 2xl:justify-center">
+      <h5
+        class="w-fit bg-gradientText bg-clip-text font-Libre text-transparent xl:pl-[2%] xl:text-[14px] 2xl:mb-[12px] 2xl:pl-[2%] 2xl:text-[20px]">
+        Contact Us
+      </h5>
+      <hr class="my-3 h-[4px] w-[100px] border-none bg-borderColor xl:my-4 2xl:my-6" />
+      <p
+        class="font-Light text-[30px] leading-8 text-white xl:pl-[2%] xl:text-[45px] xl:leading-[50px] 2xl:pl-[2%] 2xl:text-[70px] 2xl:leading-[70px]">
+        Please <span class="font-Book">call us</span> to <br />
+        get an ultimate <br />
+        <span class="font-Book">Home Solution</span>
+      </p>
+      <button
+        class="mt-[10px] flex h-[40px] w-[200px] items-center justify-center gap-2 rounded-md bg-gradient-angle2 font-Medium text-[12px] tracking-wider text-white transition-all duration-200 hover:bg-gradient-angle2Invert xl:ml-[2%] xl:mt-[25px] xl:h-[60px] xl:w-[300px] 2xl:ml-[2%] 2xl:mt-[55px] 2xl:h-[84px] 2xl:w-[446px]">
+        <span class="flex h-[30px] w-[30px] items-center justify-center rounded-full border"><i
+            class="fa-solid fa-phone"></i></span>
+        CALL US AT:+91 123456789
+      </button>
+    </div>
+  </section>
+
+  <!--End Contact-us-Section -->
+
+  <!-- Service-Section -->
+
+  <section class="min-h-[100vh] w-[100%] bg-[#f5f5f5]">
+    <div
+      class="container mx-auto grid grid-cols-2 gap-4 py-[80px] text-black xl:grid-cols-3 xl:grid-rows-3 xl:gap-[25px] xl:py-[115px] 2xl:grid-cols-3 2xl:grid-rows-3 2xl:gap-[38px] 2xl:py-[115px]">
+      <div class="min-h-[340px] xl:h-[400px] 2xl:h-[515px]">
+        <h5
+          class="mb-[12px] w-fit bg-gradientText bg-clip-text font-Libre text-transparent xl:pl-[4%] xl:text-[14px] 2xl:pl-[2%] 2xl:text-[20px]">
+          Our Service
+        </h5>
+        <hr class="my-3 h-[4px] w-[100px] border-none bg-borderColor xl:my-4 2xl:my-6" />
+        <h1
+          class="font-Light text-[28px] leading-8 xl:pl-[4%] xl:text-[45px] xl:leading-[50px] 2xl:pl-[2%] 2xl:text-[70px] 2xl:leading-[70px]">
+          Best
+          <span class="font-Book">Indoor <br />
+            Home Painting</span>
+          <br />
+          Services in <br />
+          <span class="font-Book">Kolkata</span>
+        </h1>
+        <p
+          class="mt-[5px] text-[14px] xl:mt-[25px] xl:pl-[4%] xl:text-[16px] 2xl:mt-[40px] 2xl:pl-[2%] 2xl:text-[18px]">
+          <span class="font-Book">
+            Every wall has a story – that’s what we believe at Artflare.
+          </span>
+          Our <span class="font-Book">indoor painting</span> services are
+          dedicated to creating a unified blend of your style and personality
+          within the boundaries of your home.
+        </p>
+      </div>
+
+      <div
+        class="group relative flex h-[340px] flex-col justify-between overflow-hidden rounded-md bg-[url('./Images/CTA/cta1.png')] bg-cover text-white xl:h-[400px] xl:bg-cover 2xl:h-[515px]">
+        <div class="flex h-full w-full items-end justify-between px-[10px] group-hover:opacity-0">
+          <div class="flex w-full items-center justify-between pb-[20px]">
+            <h2 class="font-Book tracking-wide xl:text-[20px] 2xl:text-[30px]">
+              Ceiling Painting
+            </h2>
+            <div class="icon text-[20px] xl:text-[40px] 2xl:text-[40px]">
+              <i class="ri-arrow-right-up-line"></i>
+            </div>
+          </div>
+        </div>
+        <div
+          class="absolute bottom-0 left-0 right-0 top-0 flex w-full flex-col justify-between bg-gradient-angle-hover px-[32px] pb-[32px] pt-[48px] opacity-0 transition-opacity duration-200 hover:scale-100 hover:opacity-90">
+          <div>
+            <h1 class="font-book xl:mb-[16px] xl:text-[20px] 2xl:mb-[20px] 2xl:text-[30px]">
+              Ceiling Painting
+            </h1>
+            <p class="font-book text-[14px] xl:text-[16px] 2xl:text-[18px]">
+              Being the leading house painters in <br />
+              Kolkata, we never miss out on the <br />
+              details.
+            </p>
+          </div>
+          <div class="icon flex w-[full] items-end justify-end text-[20px] xl:text-[40px] 2xl:text-[40px]">
+            <i class="ri-arrow-right-up-line"></i>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="group relative flex h-[300px] flex-col items-end justify-between overflow-hidden rounded-md bg-[url('./Images/CTA/Cta2.png')] bg-cover text-white transition-transform duration-200 hover:scale-105 xl:h-[400px] xl:bg-cover 2xl:h-[515px]">
+        <div class="flex h-full w-full items-end justify-between px-[10px] group-hover:opacity-0">
+          <div class="flex w-full items-center justify-between pb-[20px]">
+            <h2 class="font-Book tracking-wide xl:text-[20px] 2xl:text-[30px]">
+              Interior Wall Painting
+            </h2>
+            <div class="icon text-[20px] xl:text-[40px] 2xl:text-[40px]">
+              <i class="ri-arrow-right-up-line"></i>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="absolute bottom-0 left-0 right-0 top-0 flex w-full flex-col justify-between bg-gradient-angle-hover px-[32px] pb-[32px] pt-[48px] opacity-0 transition-opacity duration-200 hover:scale-100 hover:opacity-90">
+          <div>
+            <h2 class="font-Book xl:mb-[16px] xl:text-[20px] 2xl:mb-[20px] 2xl:text-[30px]">
+              Interior Wall Painting
+            </h2>
+            <p class="font-book text-[14px] xl:text-[16px] 2xl:text-[18px]">
+              Being the leading house painters in <br />
+              Kolkata, we never miss out on the <br />
+              details.
+            </p>
+          </div>
+          <div class="icon flex w-[full] items-end justify-end text-[20px] xl:text-[40px] 2xl:text-[40px]">
+            <i class="ri-arrow-right-up-line"></i>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="group relative flex h-[300px] flex-col items-end justify-between overflow-hidden rounded-md bg-[url('./Images/CTA/cta3.png')] bg-cover text-white transition-transform duration-200 hover:scale-105 xl:h-[400px] xl:bg-cover 2xl:h-[515px]">
+        <div class="flex h-full w-full items-end justify-between px-[10px] group-hover:opacity-0">
+          <div class="flex w-full items-center justify-between pb-[20px]">
+            <h2 class="font-Book tracking-wide xl:text-[20px] 2xl:text-[30px]">
+              Trims & Moldings
+            </h2>
+            <div class="icon text-[20px] xl:text-[40px] 2xl:text-[40px]">
+              <i class="ri-arrow-right-up-line"></i>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="absolute bottom-0 left-0 right-0 top-0 flex w-full flex-col justify-between bg-gradient-angle-hover px-[32px] pb-[32px] pt-[48px] opacity-0 transition-opacity duration-200 hover:scale-100 hover:opacity-90">
+          <div>
+            <h2 class="font-Book xl:mb-[16px] xl:text-[20px] 2xl:mb-[20px] 2xl:text-[30px]">
+              Trims & Moldings
+            </h2>
+            <p class="font-book text-[14px] xl:text-[16px] 2xl:text-[18px]">
+              Being the leading house painters in <br />
+              Kolkata, we never miss out on the <br />
+              details.
+            </p>
+          </div>
+          <div class="icon flex w-[full] items-end justify-end text-[20px] xl:text-[40px] 2xl:text-[40px]">
+            <i class="ri-arrow-right-up-line"></i>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="group relative flex h-[300px] flex-col items-end justify-between overflow-hidden rounded-md bg-[url('./Images/CTA/cta4.png')] bg-cover text-white transition-transform duration-200 hover:scale-105 xl:h-[400px] xl:bg-cover 2xl:h-[515px]">
+        <div class="flex h-full w-full items-end justify-between px-[10px] group-hover:opacity-0">
+          <div class="flex w-full items-center justify-between pb-[20px]">
+            <h2 class="font-Book tracking-wide xl:text-[20px] 2xl:text-[30px]">
+              Texture & Faux Finish Painting
+            </h2>
+            <div class="icon text-[20px] xl:text-[40px] 2xl:text-[40px]">
+              <i class="ri-arrow-right-up-line"></i>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="absolute bottom-0 left-0 right-0 top-0 flex w-full flex-col justify-between bg-gradient-angle-hover px-[32px] pb-[32px] pt-[48px] opacity-0 transition-opacity duration-200 hover:scale-100 hover:opacity-90">
+          <div>
+            <h2 class="font-Book tracking-tighter xl:mb-[16px] xl:text-[20px] 2xl:mb-[20px] 2xl:text-[30px]">
+              Texture & Faux Finish Painting
+            </h2>
+            <p class="font-book text-[14px] xl:text-[16px] 2xl:text-[18px]">
+              Being the leading house painters in <br />
+              Kolkata, we never miss out on the <br />
+              details.
+            </p>
+          </div>
+          <div class="icon flex w-[full] items-end justify-end text-[20px] xl:text-[40px] 2xl:text-[40px]">
+            <i class="ri-arrow-right-up-line"></i>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="group relative flex h-[300px] flex-col items-end justify-between overflow-hidden rounded-md bg-[url('./Images/CTA/cta5.png')] bg-cover text-white transition-transform duration-200 hover:scale-105 xl:h-[400px] xl:bg-cover 2xl:h-[515px]">
+        <div class="flex h-full w-full items-end justify-between px-[10px] group-hover:opacity-0">
+          <div class="flex w-full items-center justify-between pb-[20px]">
+            <h2 class="font-Book tracking-wide xl:text-[20px] 2xl:text-[30px]">
+              Exterior Wall Painting
+            </h2>
+            <div class="icon text-[20px] xl:text-[40px] 2xl:text-[40px]">
+              <i class="ri-arrow-right-up-line"></i>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="absolute bottom-0 left-0 right-0 top-0 flex w-full flex-col justify-between bg-gradient-angle-hover px-[32px] pb-[32px] pt-[48px] opacity-0 transition-opacity duration-200 hover:scale-100 hover:opacity-90">
+          <div>
+            <h2 class="font-Book xl:mb-[16px] xl:text-[20px] 2xl:mb-[20px] 2xl:text-[30px]">
+              Exterior Wall Painting
+            </h2>
+            <p class="font-book text-[14px] xl:text-[16px] 2xl:text-[18px]">
+              Being the leading house painters in <br />
+              Kolkata, we never miss out on the <br />
+              details.
+            </p>
+          </div>
+          <div class="icon flex w-[full] items-end justify-end text-[20px] xl:text-[40px] 2xl:text-[40px]">
+            <i class="ri-arrow-right-up-line"></i>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="group relative flex h-[300px] flex-col items-end justify-between overflow-hidden rounded-md bg-[url('./Images/CTA/cta6.png')] bg-cover text-white transition-transform duration-200 hover:scale-105 xl:h-[400px] xl:bg-cover 2xl:h-[515px]">
+        <div class="flex h-full w-full items-end justify-between px-[10px] group-hover:opacity-0">
+          <div class="flex w-full items-center justify-between pb-[20px]">
+            <h2 class="font-Book tracking-wide xl:text-[20px] 2xl:text-[30px]">
+              Gate & Fence Painting
+            </h2>
+            <div class="icon text-[20px] xl:text-[40px] 2xl:text-[40px]">
+              <i class="ri-arrow-right-up-line"></i>
+            </div>
+          </div>
+        </div>
+        <div
+          class="absolute bottom-0 left-0 right-0 top-0 flex w-full flex-col justify-between bg-gradient-angle-hover px-[32px] pb-[32px] pt-[48px] opacity-0 transition-opacity duration-200 hover:scale-100 hover:opacity-90">
+          <div>
+            <h2 class="font-Book xl:mb-[16px] xl:text-[20px] 2xl:mb-[20px] 2xl:text-[30px]">
+              Gate & Fence Painting
+            </h2>
+            <p class="font-book text-[14px] xl:text-[16px] 2xl:text-[18px]">
+              Being the leading house painters in <br />
+              Kolkata, we never miss out on the <br />
+              details.
+            </p>
+          </div>
+          <div class="icon flex w-[full] items-end justify-end text-[20px] xl:text-[40px] 2xl:text-[40px]">
+            <i class="ri-arrow-right-up-line"></i>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="group relative flex h-[300px] flex-col items-end justify-between overflow-hidden rounded-md bg-[url('./Images/CTA/cta7.png')] bg-cover text-white transition-transform duration-200 hover:scale-105 xl:h-[400px] xl:bg-cover 2xl:h-[515px]">
+        <div class="flex h-full w-full items-end justify-between px-[10px] group-hover:opacity-0">
+          <div class="flex w-full items-center justify-between pb-[20px]">
+            <h2 class="font-Book tracking-wide xl:text-[20px] 2xl:text-[30px]">
+              Deck & Patio Painting
+            </h2>
+            <div class="icon text-[20px] xl:text-[40px] 2xl:text-[40px]">
+              <i class="ri-arrow-right-up-line"></i>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="absolute bottom-0 left-0 right-0 top-0 flex w-full flex-col justify-between bg-gradient-angle-hover px-[32px] pb-[32px] pt-[48px] opacity-0 transition-opacity duration-200 hover:scale-100 hover:opacity-90">
+          <div>
+            <h2 class="font-Book xl:mb-[16px] xl:text-[20px] 2xl:mb-[20px] 2xl:text-[30px]">
+              Deck & Patio Painting
+            </h2>
+            <p class="font-book text-[14px] xl:text-[16px] 2xl:text-[18px]">
+              Being the leading house painters in <br />
+              Kolkata, we never miss out on the <br />
+              details.
+            </p>
+          </div>
+          <div class="icon flex w-[full] items-end justify-end text-[20px] xl:text-[40px] 2xl:text-[40px]">
+            <i class="ri-arrow-right-up-line"></i>
+          </div>
+        </div>
+      </div>
+      <div
+        class="group relative flex h-[300px] flex-col items-end justify-between overflow-hidden rounded-md bg-[url('./Images/CTA/cta8.png')] bg-cover text-white shadow-2xl transition-transform duration-200 hover:scale-105 xl:h-[400px] xl:bg-cover 2xl:h-[515px]">
+        <div class="flex h-full w-full items-end justify-between px-[10px] group-hover:opacity-0">
+          <div class="flex w-full items-center justify-between pb-[20px]">
+            <h2 class="font-Book tracking-wide xl:text-[20px] 2xl:text-[30px]">
+              Weatherproof & Sealing
+            </h2>
+            <div class="icon text-[20px] xl:text-[40px] 2xl:text-[40px]">
+              <i class="ri-arrow-right-up-line"></i>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="absolute bottom-0 left-0 right-0 top-0 flex w-full flex-col justify-between bg-gradient-angle-hover px-[32px] pb-[32px] pt-[48px] opacity-0 transition-opacity duration-200 hover:scale-100 hover:opacity-90">
+          <div>
+            <h2 class="font-Book xl:mb-[16px] xl:text-[20px] 2xl:mb-[20px] 2xl:text-[30px]">
+              Weatherproof & Sealing
+            </h2>
+            <p class="font-book text-[14px] xl:text-[16px] 2xl:text-[18px]">
+              Being the leading house painters in <br />
+              Kolkata, we never miss out on the <br />
+              details.
+            </p>
+          </div>
+          <div class="icon flex w-[full] items-end justify-end text-[20px] xl:text-[40px] 2xl:text-[40px]">
+            <i class="ri-arrow-right-up-line"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- End Service-Section -->
+
+  <!-- Project-Section -->
+
+  <section class="min-h-[100vh] w-[100%] bg-[#f3e9dd] py-[80px] xl:py-[115px] 2xl:py-[115px]">
+    <div class="container mx-auto">
+      <div class="flex items-end justify-between xl:items-center xl:pb-[30px] 2xl:xl:items-center 2xl:pb-[60px]">
+        <div class="flex-1">
           <h5
-            class="mb-[12px] w-fit bg-gradientText bg-clip-text font-Libre text-[14px] text-transparent xl:text-[14px] 2xl:text-[20px]"
-          >
-            Meet Artflair
+            class="w-fit bg-gradientText bg-clip-text font-Libre text-transparent xl:pl-[2%] xl:text-[14px] 2xl:mb-[12px] 2xl:pl-[2%] 2xl:text-[20px]">
+            Our Projects
           </h5>
+          <hr class="my-3 h-[4px] w-[100px] border-none bg-borderColor xl:my-4 2xl:my-6" />
+          <h1
+            class="mb-[10px] font-Light text-[30px] leading-8 xl:pl-[2%] xl:text-[45px] xl:leading-[50px] 2xl:pl-[2%] 2xl:text-[70px] 2xl:leading-[70px]">
+            Project We Have
+            <span class="font-Book">Done</span>
+          </h1>
           <p
-            class="line-clamp-4 hidden font-Light leading-tight xl:block xl:text-[30px] 2xl:block 2xl:text-[50px]"
-          >
-            Book <span class="font-bold">Free</span> <br />
-            Consultation
-          </p>
-          <p
-            class="line-clamp-4 font-Light text-[22px] leading-tight xl:hidden xl:text-[30px] 2xl:hidden 2xl:text-[50px]"
-          >
-            Book <span class="font-bold">Free</span>
-            Consultation
+            class="font-Light text-[14px] text-secondaryText xl:mt-[10px] xl:pl-[2%] xl:text-[16px] 2xl:mt-[15px] 2xl:pl-[2%] 2xl:text-[18px]">
+            Customize your <span class="font-book">home with luxury</span> and
+            love from the most
+            <span class="font-book">affordable interior design studio in Kolkata.</span>
           </p>
         </div>
-        <hr
-          class="mt-[8px] h-[2px] w-[160px] border-none bg-gray-200 xl:h-[150px] xl:w-[4px] 2xl:h-[150px] 2xl:w-[4px]"
-        />
-        <div class="right-sec w-[100%]">
-          <form action="">
-            <div
-              class="flex w-full flex-col justify-between xl:flex-row xl:gap-10 2xl:flex-row 2xl:gap-10"
-            >
-              <div class="flex flex-1 flex-col">
-                <input
-                  class="mt-4 border-b-2 pb-2 text-[12px] outline-none focus:border-borderColor xl:pl-2 xl:text-[16px] xl:placeholder:text-[14px] 2xl:text-[24px] 2xl:placeholder:text-[16px]"
-                  type="text"
-                  name="Name"
-                  id=""
-                  placeholder="Enter your Name"
-                />
-                <input
-                  class="mt-4 border-b-2 pb-2 text-[12px] outline-none focus:border-borderColor xl:pl-2 xl:text-[16px] xl:placeholder:text-[14px] 2xl:text-[24px] 2xl:placeholder:text-[16px]"
-                  type="text"
-                  name="Number"
-                  id=""
-                  placeholder="Enter your Number"
-                />
-              </div>
-              <div class="flex flex-1 flex-col">
-                <input
-                  class="mt-4 border-b-2 pb-2 text-[12px] outline-none focus:border-borderColor xl:pl-2 xl:text-[16px] xl:placeholder:text-[14px] 2xl:text-[24px] 2xl:placeholder:text-[16px]"
-                  type="email"
-                  name="Email"
-                  id=""
-                  placeholder="Enter your Email"
-                />
-                <input
-                  class="mt-4 border-b-2 pb-2 text-[12px] outline-none focus:border-borderColor xl:pl-2 xl:text-[16px] xl:placeholder:text-[14px] 2xl:text-[24px] 2xl:placeholder:text-[16px]"
-                  type="text"
-                  name="City"
-                  id=""
-                  placeholder="Enter your Current City"
-                />
-              </div>
-              <button
-                class="mt-[5px] cursor-pointer rounded-md bg-gradient-angle2 py-[5px] font-Medium text-[14px] text-white transition-all duration-200 hover:bg-gradient-angle2Invert xl:mt-[40px] xl:h-[50px] xl:w-[170px] xl:px-[40px] xl:py-[15px] 2xl:xl:mt-[40px] 2xl:h-[50px] 2xl:w-[170px] 2xl:px-[66px] 2xl:py-[38px]"
-              >
-                SUBMIT
+
+        <button
+          class="flex h-[45px] w-[150px] cursor-pointer items-center justify-center rounded-md bg-gradient-angle text-[12px] text-white drop-shadow-xl transition-all duration-500 hover:bg-gradient-angleInvert xl:h-[65px] xl:w-[250px] xl:text-[14px] 2xl:h-[78px] 2xl:w-[300px] 2xl:text-[14px]">
+          VIEW ALL PROJECTS
+        </button>
+      </div>
+
+      <div class="mt-[10px] flex items-center gap-4 pl-[2%] font-Book text-[14px] xl:text-[18px] 2xl:text-[18px]">
+        <h1
+          class="cursor-pointer border-b-2 border-borderColor border-opacity-0 text-secondaryText hover:border-opacity-100 hover:text-[#2b2a2a]">
+          Indoor Painting
+        </h1>
+        <h1
+          class="cursor-pointer border-b-2 border-borderColor border-opacity-0 text-secondaryText hover:border-opacity-100 hover:text-[#2b2a2a]">
+          Outdoor Painting
+        </h1>
+      </div>
+      <hr class="h-[1px] w-full border-none bg-gray-300" />
+
+      <div class="mt-[20px] flex items-center justify-between xl:mt-[30px] 2xl:mt-[48px]">
+        <h1 class="pl-[2%] font-Light text-[20px] xl:text-[28px] 2xl:text-[40px]">
+          Indoor Painting
+        </h1>
+        <select name="" id=""
+          class="border-2 border-secondaryText bg-transparent px-4 py-2 font-Light text-[14px] outline-none xl:text-[16px] 2xl:text-[18px]">
+          <option class="bg-transparent bg-gradient-angleInvert text-[14px] text-black xl:text-[16px] 2xl:text-[18px]"
+            value="">
+            Interior Wall Painting
+          </option>
+        </select>
+      </div>
+
+      <div class="mt-[32px] grid grid-cols-1 gap-6 xl:grid-cols-2 xl:gap-[40px] 2xl:grid-cols-2 2xl:gap-[40px]">
+        <div
+          class="relative flex h-[200px] cursor-pointer items-end bg-[url('./Images/Project/project1.png')] text-white transition-transform xl:h-[300px] 2xl:h-[350px]">
+          <div
+            class="absolute bottom-0 left-0 right-0 top-0 flex w-full items-end justify-between bg-gradient-angle-hover px-[32px] pb-[32px] pt-[48px] opacity-0 transition-all duration-500 hover:scale-95 hover:opacity-90">
+            <h2 class="font-Book text-[16px] xl:text-[20px] 2xl:text-[30px]">
+              Project Name
+            </h2>
+            <div class="icon text-[40px]">
+              <i class="ri-arrow-right-up-line"></i>
+            </div>
+          </div>
+        </div>
+        <div
+          class="relative flex h-[200px] cursor-pointer items-end bg-[url('./Images/Project/project2.png')] text-white transition-transform xl:h-[300px] 2xl:h-[350px]">
+          <div
+            class="absolute bottom-0 left-0 right-0 top-0 flex w-full items-end justify-between bg-gradient-angle-hover px-[32px] pb-[32px] pt-[48px] opacity-0 transition-all duration-500 hover:scale-95 hover:opacity-90">
+            <h2 class="font-Book text-[16px] xl:text-[20px] 2xl:text-[30px]">
+              Project Name
+            </h2>
+            <div class="icon text-[40px]">
+              <i class="ri-arrow-right-up-line"></i>
+            </div>
+          </div>
+        </div>
+        <div
+          class="relative flex h-[200px] cursor-pointer items-end bg-[url('./Images/Project/project3.png')] text-white transition-transform xl:h-[300px] 2xl:h-[350px]">
+          <div
+            class="absolute bottom-0 left-0 right-0 top-0 flex w-full items-end justify-between bg-gradient-angle-hover px-[32px] pb-[32px] pt-[48px] opacity-0 transition-all duration-500 hover:scale-95 hover:opacity-90">
+            <h2 class="font-Book text-[16px] xl:text-[20px] 2xl:text-[30px]">
+              Project Name
+            </h2>
+            <div class="icon text-[40px]">
+              <i class="ri-arrow-right-up-line"></i>
+            </div>
+          </div>
+        </div>
+        <div
+          class="relative flex h-[200px] cursor-pointer items-end bg-[url('./Images/Project/Project4.png')] text-white transition-transform xl:h-[300px] 2xl:h-[350px]">
+          <div
+            class="absolute bottom-0 left-0 right-0 top-0 flex w-full items-end justify-between bg-gradient-angle-hover px-[32px] pb-[32px] pt-[48px] opacity-0 transition-all duration-500 hover:scale-95 hover:opacity-90">
+            <h2 class="font-Book text-[16px] xl:text-[20px] 2xl:text-[30px]">
+              Project Name
+            </h2>
+            <div class="icon text-[40px]">
+              <i class="ri-arrow-right-up-line"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- End Project-Section -->
+
+  <!-- Why You Choose Section -->
+
+  <section
+    class="relative z-10 min-h-[80vh] w-[100%] overflow-hidden bg-bgGradient py-[80px] xl:min-h-[100vh] xl:py-[115px] 2xl:min-h-[100vh] 2xl:py-[115px]">
+    <div>
+      <img
+        class="absolute right-[-40%] top-[48%] -z-10 xl:right-[-20%] xl:top-0 xl:h-[120%] xl:object-cover 2xl:right-[-20%] 2xl:top-0 2xl:h-[120%]"
+        src="./Images/Home/bg-home.png" alt="" />
+    </div>
+
+    <div class="container mx-auto">
+      <div class="text-white">
+        <h5 class="mb-[12px] w-fit pl-[2%] font-Libre text-gray-300 xl:text-[14px] 2xl:text-[20px]">
+          Why Choose us
+        </h5>
+        <hr class="my-3 h-[4px] w-[100px] border-none bg-white xl:my-4 2xl:my-6" />
+        <h1
+          class="mb-[10px] pl-[2%] font-Light text-[30px] leading-8 xl:text-[45px] xl:leading-[50px] 2xl:text-[70px] 2xl:leading-[70px]">
+          Why <span class="font-Book">Artflare</span> is Called the
+          <span class="font-Book">Best Painting <br />
+            Contractors</span>
+          in Kolkata
+        </h1>
+        <p class="pl-[2%] text-[14px] xl:mt-[15px] xl:text-[16px] 2xl:mt-[20px] 2xl:text-[18px]">
+          While choosing Artflare for your home color paint solution, we
+          extend our hand to support your dream and offer our excellence and
+          expertise.
+        </p>
+      </div>
+
+      <div
+        class="custom-scrollbar z-[-5] mt-[60px] flex gap-1 px-[1rem] xl:overflow-x-auto 2xl:items-center 2xl:justify-center">
+        <div
+          class="min-h-[270px] min-w-[85%] rounded-md bg-[#fffcee] px-[38px] py-[40px] xl:min-w-[290px] 2xl:h-[450px] 2xl:min-w-[290px] 2xl:px-[38px] 2xl:py-[40px]">
+          <img src="./Images/icon/st1.png" alt="" />
+          <h4 class="mb-[20px] mt-[10px] font-Book text-[18px] leading-tight xl:text-[20px] 2xl:text-[30px]">
+            Experienced Professionals
+          </h4>
+          <p class="font-Light text-[14px] xl:text-[16px] 2xl:text-[18px]">
+            Our
+            <span class="font-Book">skilled craftsmen and painters</span> are
+            always up for delivering the
+            <span class="font-Book">most aesthetic result.</span> We eye for
+            detail that results in a flawless finish.
+          </p>
+        </div>
+        <div
+          class="min-h-[270px] min-w-[85%] rounded-md bg-[#f3ffe5] px-[38px] py-[40px] xl:min-w-[290px] 2xl:h-[450px] 2xl:min-w-[290px]">
+          <img src="./Images/icon/St2.png" alt="" />
+          <h4 class="mb-[20px] mt-[10px] font-Book text-[18px] leading-tight xl:text-[20px] 2xl:text-[30px]">
+            Customized Solution
+          </h4>
+          <p class="font-Light text-[14px] xl:text-[16px] 2xl:text-[18px]">
+            Our solutions are
+            <span class="font-Book">highly customizable</span>, making them
+            fit your imagination based on your unique style. We aim to
+            <span class="font-Book"> personalize</span> your experience.
+          </p>
+        </div>
+        <div
+          class="min-h-[270px] min-w-[85%] rounded-md bg-[#fffcee] px-[38px] py-[40px] xl:min-w-[290px] 2xl:h-[450px] 2xl:min-w-[290px]">
+          <img src="./Images/icon/St3.png" alt="" />
+          <h4 class="mb-[20px] mt-[10px] font-Book text-[18px] leading-tight xl:text-[20px] 2xl:text-[30px]">
+            Quality Materials
+          </h4>
+          <p class="font-Light text-[14px] xl:text-[16px] 2xl:text-[18px]">
+            <span class="font-Book">High-quality paints</span> and materials
+            used by <span class="font-Book">Artflare </span> make us one of
+            the most reliable home painting companies in Kolkata.
+          </p>
+        </div>
+        <div
+          class="min-h-[270px] min-w-[85%] rounded-md bg-[#f3ffe5] px-[38px] py-[40px] xl:min-w-[290px] 2xl:h-[450px] 2xl:min-w-[290px]">
+          <img src="./Images/icon/St4.png" alt="" />
+          <h4 class="mb-[20px] mt-[10px] font-Book text-[18px] leading-tight xl:text-[20px] 2xl:text-[30px]">
+            Experienced Professionals
+          </h4>
+          <p class="font-Light text-[14px] xl:text-[16px] 2xl:text-[18px]">
+            Our
+            <span class="font-Book">skilled craftsmen and painters</span> are
+            always up for delivering the
+            <span class="font-Book">most aesthetic result.</span> We eye for
+            detail that results in a flawless finish.
+          </p>
+        </div>
+        <div
+          class="min-h-[270px] min-w-[85%] rounded-md bg-[#fffcee] px-[38px] py-[40px] xl:min-w-[290px] 2xl:h-[450px] 2xl:min-w-[290px]">
+          <img src="./Images/icon/st5.png" alt="" />
+          <h4 class="mb-[20px] mt-[10px] font-Book text-[18px] leading-tight xl:text-[20px] 2xl:text-[30px]">
+            Experienced Professionals
+          </h4>
+          <p class="font-Light text-[14px] xl:text-[16px] 2xl:text-[18px]">
+            Our
+            <span class="font-Book">skilled craftsmen and painters</span> are
+            always up for delivering the
+            <span class="font-Book">most aesthetic result.</span> We eye for
+            detail that results in a flawless finish.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- End Why You Choose Section -->
+
+  <!-- How We do -->
+
+  <section
+    class="min-h-[80vh] w-[100%] bg-[url('./Images/BG/bg3.png')] bg-cover py-[80px] text-white xl:min-h-[100vh] xl:bg-cover xl:py-[115px] 2xl:min-h-[100vh] 2xl:bg-cover 2xl:py-[115px]">
+    <div class="container mx-auto">
+      <h5 class="mb-[12px] w-fit pl-[2%] font-Libre text-gray-300 xl:text-[14px] 2xl:text-[20px]">
+        How we do
+      </h5>
+      <hr class="h-[4px] w-[100px] border-none bg-white xl:my-4 2xl:my-6" />
+      <h1 class="pl-[2%] font-Light text-[30px] xl:text-[45px] xl:leading-[50px] 2xl:text-[70px] 2xl:leading-[70px]">
+        Interior Design & Decoration
+      </h1>
+      <p class="mt-[10px] pl-[2%] font-Book text-[14px] text-[#ecd5c5] xl:text-[16px] 2xl:text-[18px]">
+        Our interior decoration and design services in Kolkata are customized
+        to <span class="font-Medium">individual requirements</span> and
+        preferences, <br />
+        offering the best-in-class design and renovation that your space
+        demands.
+      </p>
+    </div>
+
+    <div class="container mx-auto mt-[46px]">
+      <ul class="relative flex flex-col gap-[20px] pl-[2%] font-Book xl:flex-row 2xl:flex-row">
+        <li class="z-[10] flex flex-row gap-2 text-[14px] xl:flex-col xl:text-[16px] 2xl:flex-col 2xl:text-[20px]">
+          <span
+            class="relative flex h-[40px] w-[40px] items-center justify-center rounded-full border-2 border-dotted border-yellow-500 after:bg-yellow-500 xl:mb-[12px] 2xl:mb-[24px]">1
+            <span
+              class="absolute top-[135%] h-[25px] w-[2px] -translate-y-1/2 transform bg-yellow-500 xl:left-[100%] xl:top-[50%] xl:h-[2px] xl:w-[45px] 2xl:left-[100%] 2xl:top-[50%] 2xl:h-[2px] 2xl:w-[60px]"></span>
+          </span>
+          <span>Planning <br />
+            Space
+          </span>
+        </li>
+        <li class="flex flex-row gap-2 text-[14px] xl:flex-col xl:text-[16px] 2xl:flex-col 2xl:text-[20px]">
+          <span
+            class="relative flex h-[40px] w-[40px] items-center justify-center rounded-full border-2 border-dotted border-yellow-500 xl:mb-[12px] 2xl:mb-[24px]">2
+            <span
+              class="absolute top-[135%] h-[25px] w-[2px] -translate-y-1/2 transform bg-yellow-500 xl:left-[100%] xl:top-[50%] xl:h-[2px] xl:w-[55px] 2xl:left-[100%] 2xl:top-[50%] 2xl:h-[2px] 2xl:w-[72px]"></span>
+          </span>
+          <span>
+            Designing <br />
+            Layout
+          </span>
+        </li>
+        <li class="flex flex-row gap-2 text-[14px] xl:flex-col xl:text-[16px] 2xl:flex-col 2xl:text-[20px]">
+          <span
+            class="relative flex h-[40px] w-[40px] items-center justify-center rounded-full border-2 border-dotted border-yellow-500 xl:mb-[12px] 2xl:mb-[24px]">3
+            <span
+              class="absolute top-[135%] h-[25px] w-[2px] -translate-y-1/2 transform bg-yellow-500 xl:left-[100%] xl:top-[50%] xl:h-[2px] xl:w-[90px] 2xl:left-[100%] 2xl:top-[50%] 2xl:h-[2px] 2xl:w-[118px]"></span>
+          </span>
+          <span>
+            Selecting Color <br />
+            and Material
+          </span>
+        </li>
+        <li class="flex flex-row gap-2 text-[14px] xl:flex-col xl:text-[16px] 2xl:flex-col 2xl:text-[20px]">
+          <span
+            class="relative flex h-[40px] w-[40px] items-center justify-center rounded-full border-2 border-dotted border-yellow-500 xl:mb-[12px] 2xl:mb-[24px]">4
+            <span
+              class="absolute top-[135%] h-[25px] w-[2px] -translate-y-1/2 transform bg-yellow-500 xl:left-[100%] xl:top-[50%] xl:h-[2px] xl:w-[125px] 2xl:left-[100%] 2xl:top-[50%] 2xl:h-[2px] 2xl:w-[160px]"></span>
+          </span>
+
+          <span>
+            Furniture and Decor <br />
+            Sourcing
+          </span>
+        </li>
+        <li class="flex flex-row gap-2 text-[14px] xl:flex-col xl:text-[16px] 2xl:flex-col 2xl:text-[20px]">
+          <span
+            class="relative flex h-[40px] w-[40px] items-center justify-center rounded-full border-2 border-dotted border-yellow-500 xl:mb-[12px] 2xl:mb-[24px]">5
+            <span
+              class="absolute top-[135%] h-[25px] w-[2px] -translate-y-1/2 transform bg-yellow-500 xl:left-[100%] xl:top-[50%] xl:h-[2px] xl:w-[40px] 2xl:left-[100%] 2xl:top-[50%] 2xl:h-[2px] 2xl:w-[52px]"></span>
+          </span>
+          <span>
+            Lighting <br />
+            Design
+          </span>
+        </li>
+        <li class="flex flex-row gap-2 text-[14px] xl:flex-col xl:text-[16px] 2xl:flex-col 2xl:text-[20px]">
+          <span
+            class="relative flex h-[40px] w-[40px] items-center justify-center rounded-full border-2 border-dotted border-yellow-500 xl:mb-[12px] 2xl:mb-[24px]">6
+            <span
+              class="absolute top-[135%] h-[25px] w-[2px] -translate-y-1/2 transform bg-yellow-500 xl:left-[100%] xl:top-[50%] xl:h-[2px] xl:w-[120px] 2xl:left-[100%] 2xl:top-[50%] 2xl:h-[2px] 2xl:w-[155px]"></span>
+          </span>
+          <span>
+            3D Renderings and <br />
+            Visualizations
+          </span>
+        </li>
+        <li class="flex flex-row gap-2 text-[14px] xl:flex-col xl:text-[16px] 2xl:flex-col 2xl:text-[20px]">
+          <span
+            class="relative flex h-[40px] w-[40px] items-center justify-center rounded-full border-2 border-dotted border-yellow-500 xl:mb-[12px] 2xl:mb-[24px]">7
+            <span
+              class="absolute top-[135%] h-[25px] w-[2px] -translate-y-1/2 transform bg-yellow-500 xl:left-[100%] xl:top-[50%] xl:h-[2px] xl:w-[110px] 2xl:left-[100%] 2xl:top-[50%] 2xl:h-[2px] 2xl:w-[142px]"></span>
+          </span>
+          <span>
+            Custom Cabinetry <br />
+            and Built-ins
+          </span>
+        </li>
+        <li class="flex flex-row gap-2 text-[14px] xl:flex-col xl:text-[16px] 2xl:flex-col 2xl:text-[20px]">
+          <span
+            class="flex h-[40px] w-[40px] items-center justify-center rounded-full border-2 border-dotted border-yellow-500 xl:mb-[12px] 2xl:mb-[24px]">8</span>
+          <span>
+            Project Management <br />
+            and Completion
+          </span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!--End How We do -->
+
+  <!-- Frequent-Question-Section -->
+  <section class="min-h-[90vh] w-[100%] bg-[#f4f4f4] py-[80px] xl:py-[115px] 2xl:py-[115px]">
+    <div class="container mx-auto">
+      <h5
+        class="mb-[12px] w-fit bg-gradientText bg-clip-text pl-[2%] font-Libre text-transparent xl:text-[14px] 2xl:text-[20px]">
+        Question and Answer
+      </h5>
+      <hr class="my-3 h-[4px] w-[100px] border-none bg-borderColor xl:my-[4] 2xl:my-6" />
+      <div class="flex items-center justify-between">
+        <div class="flex-1">
+          <h1
+            class="pl-[2%] font-Light text-[30px] leading-8 xl:text-[45px] xl:leading-[50px] 2xl:text-[70px] 2xl:leading-[70px]">
+            Frequently Asked <span class="font-Book">Questions</span>
+          </h1>
+        </div>
+        <button
+          class="h-[50px] w-[200px] rounded-md bg-gradient-angle font-Medium text-[14px] text-white transition-all duration-500 hover:bg-gradient-angleInvert xl:h-[65px] xl:w-[280px] 2xl:h-[78px] 2xl:w-[340px]">
+          KNOW MORE? CLICK HERE
+        </button>
+      </div>
+
+      <div class="mt-[60px] flex w-[100%] flex-col gap-[10px] xl:flex-row xl:gap-[20px] 2xl:flex-row 2xl:gap-[70px]">
+        <div class="h-[100%]">
+          <img class="mt-2 xl:max-w-[90%] 2xl:max-h-[100%]" src="./Images/ques.png" alt="" />
+        </div>
+
+        <div class="xl:w-[50%] 2xl:w-[50%]">
+          <div class="faq p-4 shadow-lg xl:p-3 2xl:p-4">
+            <div class="flex items-center justify-between xl:pt-[18px] 2xl:pt-[24px]">
+              <h1 class="font-Book text-[16px] xl:text-[18px] 2xl:text-[24px]">
+                How long will my exterior painting job take to finish?
+              </h1>
+              <button class="cursor-pointer">
+                <i class="ri-add-line xl:text-[30px] 2xl:text-[40px]"></i>
               </button>
             </div>
-            <div
-              class="mt-3 flex gap-2 text-[12px] xl:text-[16px] 2xl:text-[16px]"
-            >
-              <input type="checkbox" name="" id="" />
-              <p class="text-gray-400">
-                I agree to the
-                <a class="text-blue-500" href="#">Terms and Conditions</a>
+            <div class="ans max-h-[0] overflow-hidden transition-all duration-200">
+              <p class="mt-[5px] font-Light text-[14px] xl:text-[16px] 2xl:text-[18px]">
+                The timeline to complete your outdoor painting project relies
+                heavily on your specific requirements as well as variables
+                like the size of your space and the weather conditions. While
+                offering the best home painting services in Kolkata, we tend
+                to take between 3 to 7 days on average to complete a project.
               </p>
             </div>
+          </div>
+          <div class="faq p-4 shadow-lg xl:p-3 2xl:p-4">
+            <div class="flex items-center justify-between xl:pt-[18px] 2xl:pt-[24px]">
+              <h1 class="font-Book text-[16px] xl:text-[18px] 2xl:text-[24px]">
+                Do I need to have any preparation before interior painting?
+              </h1>
+              <button class="cursor-pointer">
+                <i class="ri-add-line xl:text-[30px] 2xl:text-[40px]"></i>
+              </button>
+            </div>
+            <div class="ans max-h-[0] overflow-hidden transition-all duration-200">
+              <p class="mt-[5px] font-Light text-[14px] xl:text-[16px] 2xl:text-[18px]">
+                The timeline to complete your outdoor painting project relies
+                heavily on your specific requirements as well as variables
+                like the size of your space and the weather conditions. While
+                offering the best home painting services in Kolkata, we tend
+                to take between 3 to 7 days on average to complete a project.
+              </p>
+            </div>
+          </div>
+          <div class="faq p-4 shadow-lg xl:p-3 2xl:p-4">
+            <div class="flex items-center justify-between xl:pt-[18px] 2xl:pt-[24px]">
+              <h1 class="font-Book text-[16px] xl:text-[18px] 2xl:text-[24px]">
+                Is there any particular paint finish that fits best with
+                interior walls?
+              </h1>
+              <button class="cursor-pointer">
+                <i class="ri-add-line xl:text-[30px] 2xl:text-[40px]" id="toggleIcon"></i>
+              </button>
+            </div>
+            <div class="ans duration-400 max-h-[0] overflow-hidden transition-all">
+              <p class="mt-[5px] font-Light text-[14px] xl:text-[16px] 2xl:text-[18px]">
+                The timeline to complete your outdoor painting project relies
+                heavily on your specific requirements as well as variables
+                like the size of your space and the weather conditions. While
+                offering the best home painting services in Kolkata, we tend
+                to take between 3 to 7 days on average to complete a project.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--End Frequent-Question-Section -->
+
+  <!-- Testimonial -->
+
+  <section class="min-h-[70vh] w-[100%] bg-[#f3e8db] py-[80px] xl:py-[115px] 2xl:py-[115px]">
+    <div class="container mx-auto">
+      <h5
+        class="mb-[12px] w-fit bg-gradientText bg-clip-text pl-[2%] font-Libre text-transparent xl:text-[14px] 2xl:text-[20px]">
+        Testimonial
+      </h5>
+      <hr class="h-[4px] w-[100px] border-none bg-borderColor xl:my-4 2xl:my-6" />
+      <div class="flex items-center justify-between">
+        <div class="flex-1">
+          <h1
+            class="pl-[2%] font-Light text-[30px] xl:text-[45px] xl:leading-[50px] 2xl:text-[70px] 2xl:leading-[70px]">
+            Our <span class="font-Book">Happy</span> Clients
+          </h1>
+          <div
+            class="flex flex-col justify-between xl:mt-[14px] xl:flex-row xl:items-center 2xl:mt-[20px] 2xl:flex-row 2xl:items-center">
+            <p class="pl-[2%] text-[14px] xl:text-[16px] 2xl:text-[18px]">
+              Every wall has a story – that’s what we believe at Artflare. Our
+              indoor painting services are dedicated <br />to creating a
+              unified blend of your style and personality within the
+              boundaries of your home.
+            </p>
+            <div class="mt-[10px] flex gap-4 self-end pl-[2%] xl:self-start xl:pl-[0] 2xl:self-start 2xl:pl-[0]">
+              <i onclick="slideCardPerv(this)"
+                class="ri-arrow-left-s-line border-2 border-gray-300 px-2 hover:bg-gradient-angle hover:text-white xl:text-[35px] 2xl:text-[50px]"></i>
+              <i onclick="slideCardNext(this)"
+                class="ri-arrow-right-s-line border-2 border-gray-300 px-2 hover:bg-gradient-angle hover:text-white xl:text-[35px] 2xl:text-[50px]"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="overflow-hidden">
+        <div
+          class="testimonialCard mt-[20px] flex w-[100%] flex-nowrap gap-[10px] transition-all duration-200 xl:gap-[20px] 2xl:gap-[40px]">
+          <div
+            class="flex min-w-[100%] flex-col gap-[20px] rounded-md bg-[#ffffff] px-[35px] py-[40px] font-Book shadow-lg xl:h-[300px] xl:min-w-[350px] 2xl:h-[365px] 2xl:min-w-[440px] 2xl:justify-between">
+            <div>
+              <p class="xl:text-[16px] 2xl:text-[23px]">
+                Thanks, Artflare for transforming my home to a house I’ve only
+                watched in movies.
+              </p>
+            </div>
+            <hr />
+            <div class="flex items-center gap-4">
+              <img
+                class="h-[70px] w-[70px] rounded-full object-fill xl:h-[100px] xl:w-[100px] 2xl:h-[100px] 2xl:w-[100px]"
+                src="./Images/Profile/profile1.avif" alt="" />
+              <div class="flex flex-col">
+                <h1>Kunal Basu</h1>
+                <p class="font-Light">Businessman</p>
+                <p class="text-[14px]">⭐⭐⭐⭐⭐</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex min-w-[100%] flex-col justify-between gap-[20px] rounded-md bg-[#ffffff] px-[35px] py-[40px] font-Book shadow-lg xl:h-[300px] xl:min-w-[350px] 2xl:h-[365px] 2xl:min-w-[440px]">
+            <div>
+              <p class="xl:text-[16px] 2xl:text-[23px]">
+                I had a very tight deadline. I didn’t think Artflare would be
+                able to do it. But they finished the project even before time!
+                Kudos!
+              </p>
+            </div>
+            <hr />
+            <div class="flex items-center gap-4">
+              <img
+                class="h-[80px] w-[80px] rounded-full object-fill xl:h-[100px] xl:w-[100px] 2xl:h-[100px] 2xl:w-[100px]"
+                src="./Images/Profile/profile2.avif" alt="" />
+              <div class="flex flex-col">
+                <h1>Somu Basu</h1>
+                <p class="font-Light">Businessman</p>
+                <p class="text-[14px]">⭐⭐⭐⭐⭐</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex min-w-[100%] flex-col justify-between gap-[20px] rounded-md bg-[#ffffff] px-[35px] py-[40px] font-Book shadow-lg xl:h-[300px] xl:min-w-[350px] 2xl:h-[365px] 2xl:min-w-[440px]">
+            <div>
+              <p class="xl:text-[16px] 2xl:text-[23px]">
+                It was an amazing experience with Artflare. I’m blown away
+                with their expertise and creativity.
+              </p>
+            </div>
+            <hr />
+            <div class="flex items-center gap-4">
+              <img
+                class="h-[80px] w-[80px] rounded-full object-fill xl:h-[100px] xl:w-[100px] 2xl:h-[100px] 2xl:w-[100px]"
+                src="./Images/Profile/profile3.avif" alt="" />
+              <div class="flex flex-col">
+                <h1>Sonia Paul</h1>
+                <p class="font-Light">Businessman</p>
+                <p class="text-[14px]">⭐⭐⭐⭐⭐</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex min-w-[100%] flex-col gap-[20px] rounded-md bg-[#ffffff] px-[35px] py-[40px] font-Book shadow-lg xl:h-[300px] xl:min-w-[350px] 2xl:h-[365px] 2xl:min-w-[440px] 2xl:justify-between">
+            <div>
+              <p class="xl:text-[16px] 2xl:text-[23px]">
+                Thanks, Artflare for transforming my home to a house I’ve only
+                watched in movies.
+              </p>
+            </div>
+            <hr />
+            <div class="flex items-center gap-4">
+              <img
+                class="h-[80px] w-[80px] rounded-full object-fill xl:h-[100px] xl:w-[100px] 2xl:h-[100px] 2xl:w-[100px]"
+                src="./Images/Profile/profile4.avif" alt="" />
+              <div class="flex flex-col">
+                <h1>Shilpa polley</h1>
+                <p class="font-Light">Businessman</p>
+                <p class="text-[14px]">⭐⭐⭐⭐⭐</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex min-w-[100%] flex-col gap-[20px] rounded-md bg-[#ffffff] px-[35px] py-[40px] font-Book shadow-lg xl:h-[300px] xl:min-w-[350px] 2xl:h-[365px] 2xl:min-w-[440px] 2xl:justify-between">
+            <div>
+              <p class="xl:text-[16px] 2xl:text-[23px]">
+                Thanks, Artflare for transforming my home to a house I’ve only
+                watched in movies.
+              </p>
+            </div>
+            <hr />
+            <div class="flex items-center gap-4">
+              <img
+                class="h-[80px] w-[80px] rounded-full object-fill xl:h-[100px] xl:w-[100px] 2xl:h-[100px] 2xl:w-[100px]"
+                src="./Images/Profile/profile5.avif" alt="" />
+              <div class="flex flex-col">
+                <h1>P Basu</h1>
+                <p class="font-Light">Businessman</p>
+                <p class="text-[14px]">⭐⭐⭐⭐⭐</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex min-w-[100%] flex-col gap-[20px] rounded-md bg-[#ffffff] px-[35px] py-[40px] font-Book shadow-lg xl:h-[300px] xl:min-w-[350px] 2xl:h-[365px] 2xl:min-w-[440px] 2xl:justify-between">
+            <div>
+              <p class="xl:text-[16px] 2xl:text-[23px]">
+                Thanks, Artflare for transforming my home to a house I’ve only
+                watched in movies.
+              </p>
+            </div>
+            <hr />
+            <div class="flex items-center gap-4">
+              <img
+                class="h-[80px] w-[80px] rounded-full object-fill xl:h-[100px] xl:w-[100px] 2xl:h-[100px] 2xl:w-[100px]"
+                src="./Images/Profile/profile1.avif" alt="" />
+              <div class="flex flex-col">
+                <h1>Kunal Basu</h1>
+                <p class="font-Light">Businessman</p>
+                <p class="text-[14px]">⭐⭐⭐⭐⭐</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog-section -->
+
+  <section
+    class="min-h-[60vh] w-[100%] bg-[#f4f4f4] py-[80px] xl:min-h-[70vh] xl:py-[115px] 2xl:xl:min-h-[70vh] 2xl:py-[115px]">
+    <div class="container mx-auto">
+      <div>
+        <h5
+          class="w-fit bg-gradientText bg-clip-text pl-[2%] font-Libre text-transparent xl:text-[14px] 2xl:text-[20px]">
+          We are in news
+        </h5>
+        <hr class="my-3 h-[4px] w-[100px] border-none bg-borderColor xl:my-4 2xl:my-6" />
+        <div class="flex items-center justify-between">
+          <div class="flex w-full justify-between">
+            <h1
+              class="pl-[2%] font-Light text-[30px] leading-8 xl:text-[45px] xl:leading-[50px] 2xl:text-[70px] 2xl:leading-[70px]">
+              Our Latest<span class="font-Book"> Blog </span>
+            </h1>
+            <button
+              class="h-[50px] w-[200px] rounded-md bg-gradient-angle font-Medium text-[14px] tracking-wider text-white transition-all duration-300 hover:bg-gradient-angleInvert xl:h-[65px] xl:w-[280px] 2xl:h-[78px] 2xl:w-[340px]">
+              VIEW ALL POST
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="mt-[60px] flex h-full w-full flex-col items-center justify-between gap-[10px] text-white xl:flex-row 2xl:flex-row 2xl:gap-[40px]">
+        <div
+          class="group relative h-[200px] w-full cursor-pointer bg-[url('./Images/Bottom/blog1.png')] bg-cover bg-center px-[32px] pb-[20px] xl:h-[300px] xl:w-[550px] xl:pb-[32px] xl:pt-[48px] 2xl:h-[390px] 2xl:w-[745px] 2xl:pb-[32px] 2xl:pt-[48px]">
+          <div class="flex h-full w-full items-end justify-between group-hover:opacity-0">
+            <div class="">
+              <p>September 15, 2023</p>
+              <h2 class="font-Book text-[16px] tracking-wide xl:text-[20px] 2xl:text-[30px]">
+                Affordable comfort for your family
+              </h2>
+            </div>
+            <div class="icon text-[20px] xl:text-[30px] 2xl:text-[40px]">
+              <i class="ri-arrow-right-up-line"></i>
+            </div>
+          </div>
+          <div
+            class="absolute bottom-0 left-0 right-0 top-0 w-full bg-gradient-angle-hover p-[20px] opacity-0 transition-all duration-700 hover:scale-100 hover:opacity-90 xl:px-[32px] xl:pb-[32px] xl:pt-[48px] 2xl:px-[32px] 2xl:pb-[32px] 2xl:pt-[48px]">
+            <div class="">
+              <p>September 15, 2023</p>
+              <h2 class="font-Book text-[16px] tracking-wide xl:text-[20px] 2xl:text-[30px]">
+                Affordable comfort for your family
+              </h2>
+              <p class="xl:twxt-[16px] font-Book text-[14px] 2xl:text-[18px]">
+                Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever since the 1500s,
+              </p>
+            </div>
+            <div class="icon absolute bottom-10 right-10 text-[20px] xl:text-[30px] 2xl:text-[40px]">
+              <i class="ri-arrow-right-up-line"></i>
+            </div>
+          </div>
+        </div>
+        <div
+          class="group relative h-[200px] w-full bg-[url('./Images/Bottom/Blog2.png')] bg-cover bg-center px-[32px] pb-[20px] xl:h-[300px] xl:w-[550px] xl:pb-[32px] xl:pt-[48px] 2xl:h-[390px] 2xl:w-[745px] 2xl:pb-[32px] 2xl:pt-[48px]">
+          <div class="flex h-full w-full items-end justify-between group-hover:opacity-0">
+            <div>
+              <p>September 18, 2023</p>
+              <h2 class="font-Book text-[16px] tracking-wide xl:text-[20px] 2xl:text-[30px]">
+                Building a Shield Against Moisture
+              </h2>
+            </div>
+            <div class="icon text-[20px] xl:text-[30px] 2xl:text-[40px]">
+              <i class="ri-arrow-right-up-line"></i>
+            </div>
+          </div>
+          <div
+            class="absolute bottom-0 left-0 right-0 top-0 w-full bg-gradient-angle-hover p-[20px] opacity-0 transition-all duration-700 hover:scale-100 hover:opacity-90 xl:px-[32px] xl:pb-[32px] xl:pt-[48px] 2xl:px-[32px] 2xl:pb-[32px] 2xl:pt-[48px]">
+            <div class="">
+              <p>September 15, 2023</p>
+              <h2 class="font-Book text-[16px] tracking-wide xl:text-[20px] 2xl:text-[30px]">
+                Affordable comfort for your family
+              </h2>
+              <p class="font-Book text-[14px] xl:text-[16px] 2xl:text-[18px]">
+                Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever since the 1500s,
+              </p>
+            </div>
+            <div class="icon absolute bottom-10 right-10 text-[20px] xl:text-[30px] 2xl:text-[40px]">
+              <i class="ri-arrow-right-up-line"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Blog-section -->
+
+  <!-- Contact-Us -->
+
+  <section
+    class="w-[100%] bg-[url('./Images/BG/BottomBg.png')] bg-center py-[80px] xl:py-[115px] 2xl:h-[500px] 2xl:py-[115px]">
+    <div class="container mx-auto">
+      <div class="flex justify-between">
+        <div class="w-full pl-[2%] text-white">
+          <h5 class="mb-[12px] w-fit pl-[2%] font-Libre text-[14px] text-[#ffe4f2] xl:text-[14px] 2xl:text-[20px]">
+            Contact Us
+          </h5>
+          <hr class="my-3 h-[4px] w-[100px] border-none bg-white xl:my-4 2xl:my-6" />
+          <h1 class="font-Light xl:text-[45px] xl:leading-[50px] 2xl:text-[70px] 2xl:leading-[70px]">
+            Keep in<span class="font-Book"> Touch </span>
+          </h1>
+          <p class="font-Book text-[14px] xl:mt-[16px] xl:text-[16px] 2xl:mt-[32px] 2xl:text-[18px]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+
+        <div class="right-sec w-[100%]">
+          <form action="">
+            <div class="flex w-full flex-col justify-between gap-10 text-white xl:flex-row 2xl:flex-row">
+              <div class="flex flex-1 flex-col">
+                <input
+                  class="border-b-2 bg-transparent outline-none placeholder:text-[16px] focus:border-borderColor xl:pb-1 xl:pl-1 xl:text-[18px] xl:placeholder:text-[14px] 2xl:pb-2 2xl:pl-2 2xl:text-[24px] 2xl:placeholder:text-[16px]"
+                  type="text" name="Name" id="" placeholder="Enter your Name" />
+                <input
+                  class="mt-4 border-b-2 bg-transparent outline-none placeholder:text-[16px] focus:border-borderColor xl:pb-1 xl:pl-1 xl:text-[18px] xl:placeholder:text-[14px] 2xl:pb-2 2xl:pl-2 2xl:text-[24px] 2xl:placeholder:text-[16px]"
+                  type="text" name="Number" id="" placeholder="Enter your Number" />
+                <input
+                  class="mt-4 border-b-2 bg-transparent outline-none placeholder:text-[16px] focus:border-borderColor xl:pb-1 xl:pl-1 xl:text-[18px] xl:placeholder:text-[14px] 2xl:pb-2 2xl:pl-2 2xl:text-[24px] 2xl:placeholder:text-[16px]"
+                  type="email" name="Email" id="" placeholder="Enter your Email" />
+              </div>
+              <div class="flex flex-1 flex-col">
+                <textarea
+                  class="mt-4 resize-none border-b-2 bg-transparent outline-none focus:border-borderColor xl:h-[115px] xl:pb-1 xl:pl-1 xl:text-[18px] xl:placeholder:text-[14px] 2xl:h-[155px] 2xl:pb-2 2xl:pl-2 2xl:text-[24px] 2xl:placeholder:text-[16px]"
+                  name="textarea" placeholder="Message"></textarea>
+              </div>
+            </div>
+            <button
+              class="mt-[25px] h-[50px] w-[250px] cursor-pointer rounded-md bg-gradient-angle2 font-Medium text-[14px] text-white transition-all duration-500 hover:bg-gradient-angle2Invert xl:mt-[24px] xl:h-[65px] xl:w-[280px] 2xl:mt-[32px] 2xl:h-[70px] 2xl:w-[320px]">
+              SEND MESSAGE
+            </button>
           </form>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+  <!-- Contact-Us -->
 
-    <!-- End Free-Consultation -->
-
-    <!-- About-section -->
-    <section
-      class="relative min-h-[100vh] w-[100%] overflow-hidden bg-[#f1f5f3] pb-[70px] pt-[40px] xl:pb-[103px] 2xl:xl:pb-[103px]"
-    >
+  <!-- footer -->
+  <footer class="min-h-[200vh] w-[100%] bg-footerGradient pt-[100px] xl:min-h-[575px] 2xl:min-h-[575px]">
+    <div class="container mx-auto">
       <div
-        class="bgImg absolute bottom-[-8%] left-0 xl:bottom-[-9%] 2xl:bottom-[-20%]"
-      >
-        <img
-          class="h-[100%] w-[50%]"
-          src="./Images/Home/trasnparentAngle.png"
-          alt=""
-        />
-      </div>
-      <div class="container mx-auto flex gap-[40px] pt-[225px]">
-        <div class="left-sec w-[32%]">
-          <h5
-            class="mb-[12px] w-fit bg-gradientText bg-clip-text font-Libre text-[14px] text-transparent xl:pl-[5%] xl:text-[14px] 2xl:pl-[4%] 2xl:text-[20px]"
-          >
-            A Few Words
-          </h5>
-          <hr
-            class="h-[4px] w-[100px] border-none bg-borderColor xl:my-4 xl:pl-[-6%] 2xl:my-6 2xl:pl-[-5%]"
-          />
-          <p
-            class="font-Light text-[30px] leading-8 xl:pl-[5%] xl:text-[45px] xl:leading-[50px] 2xl:pl-[4%] 2xl:text-[70px] 2xl:leading-[70px]"
-          >
-            Welcome to <br />
-            <span class="font-bold">Artflare </span>
-          </p>
-        </div>
-
-        <div
-          class="right-sec flex w-[70%] flex-col text-secondaryText xl:flex-row xl:gap-[30px] 2xl:flex-row 2xl:justify-between 2xl:gap-[50px]"
-        >
-          <div class="xl:w-[48%] 2xl:w-[48%]">
-            <div>
-              <img
-                class="xl:mb-[30px] xl:w-[80%] 2xl:mb-[70px] 2xl:w-[95%]"
-                src="./Images/Home/About1.png"
-                alt=""
-              />
-            </div>
-            <div>
-              <h1
-                class="font-Light text-[20px] xl:text-[28px] xl:leading-8 2xl:text-[40px] 2xl:leading-[45px] 2xl:tracking-wide"
-              >
-                Why Your
-                <span class="font-Book text-boldColor">Space</span> Needs <br />
-                <span class="font-Book text-boldColor">Colors</span>
-              </h1>
-              <h4
-                class="font-Book text-[15px] text-boldColor xl:mt-[.5rem] xl:text-[16px] 2xl:text-[22px]"
-              >
-                Colors have the power to shift the mood, tone, and emotion of
-                your surrounds.
-              </h4>
-
-              <p
-                class="mt-[5px] font-Light text-[14px] xl:mt-[.4rem] xl:text-[14px] 2xl:mt-[1rem] 2xl:text-[20px]"
-              >
-                The
-                <span class="font-Book text-boldColor">right color</span> can
-                turn a dull room into the most happening space instantaneously.
-                We, being the
-                <span class="font-Book text-boldColor"
-                  >leading house painters in Kolkata</span
-                >, recognize the importance of
-                <span class="font-Book text-boldColor">colors</span> and offer
-                painting solutions that breathe life into your home. <br />
-
-                <span class="font-Book text-boldColor"
-                  >Whether it’s indoor or outdoor,</span
-                >
-                we make sure that your vision and style pop out through our
-                painting.
-              </p>
-            </div>
+        class="flex h-full w-full flex-col justify-between text-center text-white xl:flex-row xl:text-start 2xl:flex-row 2xl:text-start">
+        <div class="left w-[100%] xl:w-[25%] 2xl:w-[25%]">
+          <div class="flex w-full justify-center xl:justify-start 2xl:justify-start">
+            <img class="" src="./Images/Logo (1).png" alt="" />
           </div>
-
-          <div class="w-[100%] xl:w-[50%] 2xl:w-[50%]">
-            <div class="mb-[20px] xl:mb-[30px] 2xl:mb-[78px]">
-              <h1
-                class="mt-[10px] font-Light text-[20px] xl:text-[28px] xl:leading-8 2xl:text-[40px] 2xl:leading-[45px] 2xl:tracking-wide"
-              >
-                Where We Bring
-                <span class="font-Book text-boldColor">Colors </span>to <br />
-                <span class="font-Book text-boldColor">Life!</span>
-              </h1>
-              <h4
-                class="mt-[5px] font-Book text-[15px] text-boldColor xl:mt-[.5rem] xl:text-[16px] 2xl:text-[22px]"
-              >
-                Experience the Best Home Painting Services in Kolkata
-              </h4>
-
-              <p
-                class="mt-[5px] font-Light text-[14px] xl:mt-[.4rem] xl:text-[14px] 2xl:mt-[1rem] 2xl:text-[20px]"
-              >
-                After providing
-                <span class="font-Book text-boldColor">interior</span> and
-                <span class="font-Book text-boldColor">exterior</span> home
-                <span class="font-Book text-boldColor"
-                  >color paint solutions</span
-                >
-                to our clients across Kolkata for a decade, Artflare has
-                fostered the ability to transform a space with the
-                <span class="font-Book text-boldColor">magic of color.</span>
-                <br />
-                From <span class="font-Book text-boldColor">houses</span> to
-                <span class="font-Book text-boldColor"
-                  >commercial properties</span
-                >, we are the most reliable
-                <span class="font-Book text-boldColor"
-                  >house painting contractors</span
-                >
-                in Kolkata equipped to transform your space while giving it a
-                char
-              </p>
-            </div>
-            <div>
-              <img
-                class="xl:w-[80%] 2xl:w-[95%]"
-                src="./Images/Home/About2.png"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--End About-section -->
-
-    <!-- Contact-us-Section -->
-    <section
-      class="min-h-[10vh] w-[100%] bg-ContactBG bg-cover bg-center bg-no-repeat xl:min-h-[40vh] xl:bg-cover 2xl:h-[725px]"
-    >
-      <div
-        class="content container mx-auto h-full py-[60px] xl:py-[80px] 2xl:flex 2xl:flex-col 2xl:justify-center"
-      >
-        <h5
-          class="w-fit bg-gradientText bg-clip-text font-Libre text-transparent xl:pl-[2%] xl:text-[14px] 2xl:mb-[12px] 2xl:pl-[2%] 2xl:text-[20px]"
-        >
-          Contact Us
-        </h5>
-        <hr
-          class="my-3 h-[4px] w-[100px] border-none bg-borderColor xl:my-4 2xl:my-6"
-        />
-        <p
-          class="font-Light text-[30px] leading-8 text-white xl:pl-[2%] xl:text-[45px] xl:leading-[50px] 2xl:pl-[2%] 2xl:text-[70px] 2xl:leading-[70px]"
-        >
-          Please <span class="font-Book">call us</span> to <br />
-          get an ultimate <br />
-          <span class="font-Book">Home Solution</span>
-        </p>
-        <button
-          class="mt-[10px] flex h-[40px] w-[200px] items-center justify-center gap-2 rounded-md bg-gradient-angle2 font-Medium text-[12px] tracking-wider text-white transition-all duration-200 hover:bg-gradient-angle2Invert xl:ml-[2%] xl:mt-[25px] xl:h-[60px] xl:w-[300px] 2xl:ml-[2%] 2xl:mt-[55px] 2xl:h-[84px] 2xl:w-[446px]"
-        >
-          <span
-            class="flex h-[30px] w-[30px] items-center justify-center rounded-full border"
-            ><i class="fa-solid fa-phone"></i
-          ></span>
-          CALL US AT:+91 123456789
-        </button>
-      </div>
-    </section>
-
-    <!--End Contact-us-Section -->
-
-    <!-- Service-Section -->
-
-    <section class="min-h-[100vh] w-[100%] bg-[#f5f5f5]">
-      <div
-        class="container mx-auto grid grid-cols-2 gap-4 py-[80px] text-black xl:grid-cols-3 xl:grid-rows-3 xl:gap-[25px] xl:py-[115px] 2xl:grid-cols-3 2xl:grid-rows-3 2xl:gap-[38px] 2xl:py-[115px]"
-      >
-        <div class="h-[340px] xl:h-[400px] 2xl:h-[515px]">
-          <h5
-            class="mb-[12px] w-fit bg-gradientText bg-clip-text font-Libre text-transparent xl:pl-[4%] xl:text-[14px] 2xl:pl-[2%] 2xl:text-[20px]"
-          >
-            Our Service
-          </h5>
-          <hr
-            class="my-3 h-[4px] w-[100px] border-none bg-borderColor xl:my-4 2xl:my-6"
-          />
-          <h1
-            class="font-Light text-[28px] leading-8 xl:pl-[4%] xl:text-[45px] xl:leading-[50px] 2xl:pl-[2%] 2xl:text-[70px] 2xl:leading-[70px]"
-          >
-            Best
-            <span class="font-Book"
-              >Indoor <br />
-              Home Painting</span
-            >
+          <h1 class="mt-[10px] font-Book xl:text-[18px] 2xl:text-[24px]">
+            We build safety & comfort for you
+          </h1>
+          <p class="font-Book text-[#9fa0b1] xl:text-[14px] 2xl:text-[16px]">
+            After providing interior and exterior home color paint solutions
+            to our clients across Kolkata for a decade, Artflare has fostered
+            the ability to transform a space with the magic of color. <br />
             <br />
-            Services in <br />
-            <span class="font-Book">Kolkata</span>
-          </h1>
-          <p
-            class="mt-[5px] text-[14px] xl:mt-[25px] xl:pl-[4%] xl:text-[16px] 2xl:mt-[40px] 2xl:pl-[2%] 2xl:text-[18px]"
-          >
-            <span class="font-Book">
-              Every wall has a story – that’s what we believe at Artflare.
-            </span>
-            Our <span class="font-Book">indoor painting</span> services are
-            dedicated to creating a unified blend of your style and personality
-            within the boundaries of your home.
+            From houses to commercial properties, we are the most reliable
+            house painting contractors in Kolkata equipped to transform your
+            space while giving it a character.
           </p>
         </div>
-
-        <div
-          class="group relative flex h-[340px] flex-col justify-between overflow-hidden rounded-md bg-[url('./Images/CTA/cta1.png')] bg-cover text-white xl:h-[400px] xl:bg-cover 2xl:h-[515px]"
-        >
-          <div
-            class="flex h-full w-full items-end justify-between px-[10px] group-hover:opacity-0"
-          >
-            <div class="flex w-full items-center justify-between pb-[20px]">
-              <h2
-                class="font-Book tracking-wide xl:text-[20px] 2xl:text-[30px]"
-              >
-                Ceiling Painting
-              </h2>
-              <div class="icon text-[40px]">
-                <i class="ri-arrow-right-up-line"></i>
-              </div>
-            </div>
-          </div>
-          <div
-            class="absolute bottom-0 left-0 right-0 top-0 flex w-full flex-col justify-between bg-gradient-angle-hover px-[32px] pb-[32px] pt-[48px] opacity-0 transition-opacity duration-200 hover:scale-100 hover:opacity-90"
-          >
-            <div>
-              <h1
-                class="font-book xl:mb-[16px] xl:text-[20px] 2xl:mb-[20px] 2xl:text-[30px]"
-              >
-                Ceiling Painting
-              </h1>
-              <p class="font-book xl:text-[16px] 2xl:text-[18px]">
-                Being the leading house painters in <br />
-                Kolkata, we never miss out on the <br />
-                details.
-              </p>
-            </div>
-            <div class="icon flex w-[full] items-end justify-end text-[40px]">
-              <i class="ri-arrow-right-up-line"></i>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="group relative flex h-[300px] flex-col items-end justify-between overflow-hidden rounded-md bg-[url('./Images/CTA/Cta2.png')] bg-cover text-white transition-transform duration-200 hover:scale-105 xl:h-[400px] xl:bg-cover 2xl:h-[515px]"
-        >
-          <div
-            class="flex h-full w-full items-end justify-between px-[10px] group-hover:opacity-0"
-          >
-            <div class="flex w-full items-center justify-between pb-[20px]">
-              <h2
-                class="font-Book tracking-wide xl:text-[20px] 2xl:text-[30px]"
-              >
-                Interior Wall Painting
-              </h2>
-              <div class="icon text-[40px]">
-                <i class="ri-arrow-right-up-line"></i>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="absolute bottom-0 left-0 right-0 top-0 flex w-full flex-col justify-between bg-gradient-angle-hover px-[32px] pb-[32px] pt-[48px] opacity-0 transition-opacity duration-200 hover:scale-100 hover:opacity-90"
-          >
-            <div>
-              <h2
-                class="font-Book xl:mb-[16px] xl:text-[20px] 2xl:mb-[20px] 2xl:text-[30px]"
-              >
-                Interior Wall Painting
-              </h2>
-              <p class="font-book xl:text-[16px] 2xl:text-[18px]">
-                Being the leading house painters in <br />
-                Kolkata, we never miss out on the <br />
-                details.
-              </p>
-            </div>
-            <div class="icon flex w-[full] items-end justify-end text-[40px]">
-              <i class="ri-arrow-right-up-line"></i>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="group relative flex h-[300px] flex-col items-end justify-between overflow-hidden rounded-md bg-[url('./Images/CTA/cta3.png')] bg-cover text-white transition-transform duration-200 hover:scale-105 xl:h-[400px] xl:bg-cover 2xl:h-[515px]"
-        >
-          <div
-            class="flex h-full w-full items-end justify-between px-[10px] group-hover:opacity-0"
-          >
-            <div class="flex w-full items-center justify-between pb-[20px]">
-              <h2
-                class="font-Book tracking-wide xl:text-[20px] 2xl:text-[30px]"
-              >
-                Trims & Moldings
-              </h2>
-              <div class="icon text-[40px]">
-                <i class="ri-arrow-right-up-line"></i>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="absolute bottom-0 left-0 right-0 top-0 flex w-full flex-col justify-between bg-gradient-angle-hover px-[32px] pb-[32px] pt-[48px] opacity-0 transition-opacity duration-200 hover:scale-100 hover:opacity-90"
-          >
-            <div>
-              <h2
-                class="font-Book xl:mb-[16px] xl:text-[20px] 2xl:mb-[20px] 2xl:text-[30px]"
-              >
-                Trims & Moldings
-              </h2>
-              <p class="font-book xl:text-[16px] 2xl:text-[18px]">
-                Being the leading house painters in <br />
-                Kolkata, we never miss out on the <br />
-                details.
-              </p>
-            </div>
-            <div class="icon flex w-[full] items-end justify-end text-[40px]">
-              <i class="ri-arrow-right-up-line"></i>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="group relative flex h-[300px] flex-col items-end justify-between overflow-hidden rounded-md bg-[url('./Images/CTA/cta4.png')] bg-cover text-white transition-transform duration-200 hover:scale-105 xl:h-[400px] xl:bg-cover 2xl:h-[515px]"
-        >
-          <div
-            class="flex h-full w-full items-end justify-between px-[10px] group-hover:opacity-0"
-          >
-            <div class="flex w-full items-center justify-between pb-[20px]">
-              <h2
-                class="font-Book tracking-wide xl:text-[20px] 2xl:text-[30px]"
-              >
-                Texture & Faux Finish Painting
-              </h2>
-              <div class="icon text-[40px]">
-                <i class="ri-arrow-right-up-line"></i>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="absolute bottom-0 left-0 right-0 top-0 flex w-full flex-col justify-between bg-gradient-angle-hover px-[32px] pb-[32px] pt-[48px] opacity-0 transition-opacity duration-200 hover:scale-100 hover:opacity-90"
-          >
-            <div>
-              <h2
-                class="font-Book tracking-tighter xl:mb-[16px] xl:text-[20px] 2xl:mb-[20px] 2xl:text-[30px]"
-              >
-                Texture & Faux Finish Painting
-              </h2>
-              <p class="font-book xl:text-[16px] 2xl:text-[18px]">
-                Being the leading house painters in <br />
-                Kolkata, we never miss out on the <br />
-                details.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="group relative flex h-[300px] flex-col items-end justify-between overflow-hidden rounded-md bg-[url('./Images/CTA/cta5.png')] bg-cover text-white transition-transform duration-200 hover:scale-105 xl:h-[400px] xl:bg-cover 2xl:h-[515px]"
-        >
-          <div
-            class="flex h-full w-full items-end justify-between px-[10px] group-hover:opacity-0"
-          >
-            <div class="flex w-full items-center justify-between pb-[20px]">
-              <h2
-                class="font-Book tracking-wide xl:text-[20px] 2xl:text-[30px]"
-              >
-                Exterior Wall Painting
-              </h2>
-              <div class="icon text-[40px]">
-                <i class="ri-arrow-right-up-line"></i>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="absolute bottom-0 left-0 right-0 top-0 flex w-full flex-col justify-between bg-gradient-angle-hover px-[32px] pb-[32px] pt-[48px] opacity-0 transition-opacity duration-200 hover:scale-100 hover:opacity-90"
-          >
-            <div>
-              <h2
-                class="font-Book xl:mb-[16px] xl:text-[20px] 2xl:mb-[20px] 2xl:text-[30px]"
-              >
-                Exterior Wall Painting
-              </h2>
-              <p class="font-book xl:text-[16px] 2xl:text-[18px]">
-                Being the leading house painters in <br />
-                Kolkata, we never miss out on the <br />
-                details.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="group relative flex h-[300px] flex-col items-end justify-between overflow-hidden rounded-md bg-[url('./Images/CTA/cta6.png')] bg-cover text-white transition-transform duration-200 hover:scale-105 xl:h-[400px] xl:bg-cover 2xl:h-[515px]"
-        >
-          <div
-            class="flex h-full w-full items-end justify-between px-[10px] group-hover:opacity-0"
-          >
-            <div class="flex w-full items-center justify-between pb-[20px]">
-              <h2
-                class="font-Book tracking-wide xl:text-[20px] 2xl:text-[30px]"
-              >
-                Gate & Fence Painting
-              </h2>
-              <div class="icon text-[40px]">
-                <i class="ri-arrow-right-up-line"></i>
-              </div>
-            </div>
-          </div>
-          <div
-            class="absolute bottom-0 left-0 right-0 top-0 flex w-full flex-col justify-between bg-gradient-angle-hover px-[32px] pb-[32px] pt-[48px] opacity-0 transition-opacity duration-200 hover:scale-100 hover:opacity-90"
-          >
-            <div>
-              <h2
-                class="font-Book xl:mb-[16px] xl:text-[20px] 2xl:mb-[20px] 2xl:text-[30px]"
-              >
-                Gate & Fence Painting
-              </h2>
-              <p class="font-book xl:text-[16px] 2xl:text-[18px]">
-                Being the leading house painters in <br />
-                Kolkata, we never miss out on the <br />
-                details.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="group relative flex h-[300px] flex-col items-end justify-between overflow-hidden rounded-md bg-[url('./Images/CTA/cta7.png')] bg-cover text-white transition-transform duration-200 hover:scale-105 xl:h-[400px] xl:bg-cover 2xl:h-[515px]"
-        >
-          <div
-            class="flex h-full w-full items-end justify-between px-[10px] group-hover:opacity-0"
-          >
-            <div class="flex w-full items-center justify-between pb-[20px]">
-              <h2
-                class="font-Book tracking-wide xl:text-[20px] 2xl:text-[30px]"
-              >
-                Deck & Patio Painting
-              </h2>
-              <div class="icon text-[40px]">
-                <i class="ri-arrow-right-up-line"></i>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="absolute bottom-0 left-0 right-0 top-0 flex w-full flex-col justify-between bg-gradient-angle-hover px-[32px] pb-[32px] pt-[48px] opacity-0 transition-opacity duration-200 hover:scale-100 hover:opacity-90"
-          >
-            <div>
-              <h2
-                class="font-Book xl:mb-[16px] xl:text-[20px] 2xl:mb-[20px] 2xl:text-[30px]"
-              >
-                Deck & Patio Painting
-              </h2>
-              <p class="font-book xl:text-[16px] 2xl:text-[18px]">
-                Being the leading house painters in <br />
-                Kolkata, we never miss out on the <br />
-                details.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          class="group relative flex h-[300px] flex-col items-end justify-between overflow-hidden rounded-md bg-[url('./Images/CTA/cta8.png')] bg-cover text-white shadow-2xl transition-transform duration-200 hover:scale-105 xl:h-[400px] xl:bg-cover 2xl:h-[515px]"
-        >
-          <div
-            class="flex h-full w-full items-end justify-between px-[10px] group-hover:opacity-0"
-          >
-            <div class="flex w-full items-center justify-between pb-[20px]">
-              <h2
-                class="font-Book tracking-wide xl:text-[20px] 2xl:text-[30px]"
-              >
-                Weatherproof & Sealing
-              </h2>
-              <div class="icon text-[40px]">
-                <i class="ri-arrow-right-up-line"></i>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="absolute bottom-0 left-0 right-0 top-0 flex w-full flex-col justify-between bg-gradient-angle-hover px-[32px] pb-[32px] pt-[48px] opacity-0 transition-opacity duration-200 hover:scale-100 hover:opacity-90"
-          >
-            <div>
-              <h2
-                class="font-Book xl:mb-[16px] xl:text-[20px] 2xl:mb-[20px] 2xl:text-[30px]"
-              >
-                Weatherproof & Sealing
-              </h2>
-              <p class="font-book xl:text-[16px] 2xl:text-[18px]">
-                Being the leading house painters in <br />
-                Kolkata, we never miss out on the <br />
-                details.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- End Service-Section -->
-
-    <!-- Project-Section -->
-
-    <section
-      class="min-h-[100vh] w-[100%] bg-[#f3e9dd] py-[80px] xl:py-[115px] 2xl:py-[115px]"
-    >
-      <div class="container mx-auto">
-        <div
-          class="flex items-end justify-between xl:items-center xl:pb-[30px] 2xl:xl:items-center 2xl:pb-[60px]"
-        >
-          <div class="flex-1">
-            <h5
-              class="w-fit bg-gradientText bg-clip-text font-Libre text-transparent xl:pl-[2%] xl:text-[14px] 2xl:mb-[12px] 2xl:pl-[2%] 2xl:text-[20px]"
-            >
-              Our Projects
-            </h5>
-            <hr
-              class="my-3 h-[4px] w-[100px] border-none bg-borderColor xl:my-4 2xl:my-6"
-            />
-            <h1
-              class="mb-[10px] font-Light text-[30px] leading-8 xl:pl-[2%] xl:text-[45px] xl:leading-[50px] 2xl:pl-[2%] 2xl:text-[70px] 2xl:leading-[70px]"
-            >
-              Project We Have
-              <span class="font-Book">Done</span>
-            </h1>
-            <p
-              class="font-Light text-[14px] text-secondaryText xl:mt-[10px] xl:pl-[2%] xl:text-[16px] 2xl:mt-[15px] 2xl:pl-[2%] 2xl:text-[18px]"
-            >
-              Customize your <span class="font-book">home with luxury</span> and
-              love from the most
-              <span class="font-book"
-                >affordable interior design studio in Kolkata.</span
-              >
-            </p>
-          </div>
-
-          <button
-            class="flex h-[45px] w-[150px] cursor-pointer items-center justify-center rounded-md bg-gradient-angle text-[12px] text-white drop-shadow-xl transition-all duration-500 hover:bg-gradient-angleInvert xl:h-[65px] xl:w-[250px] xl:text-[14px] 2xl:h-[78px] 2xl:w-[300px] 2xl:text-[14px]"
-          >
-            VIEW ALL PROJECTS
-          </button>
-        </div>
-
-        <div
-          class="mt-[10px] flex items-center gap-4 pl-[2%] font-Book text-[14px] xl:text-[18px] 2xl:text-[18px]"
-        >
-          <h1
-            class="cursor-pointer border-b-2 border-borderColor border-opacity-0 text-secondaryText hover:border-opacity-100 hover:text-[#2b2a2a]"
-          >
-            Indoor Painting
-          </h1>
-          <h1
-            class="cursor-pointer border-b-2 border-borderColor border-opacity-0 text-secondaryText hover:border-opacity-100 hover:text-[#2b2a2a]"
-          >
-            Outdoor Painting
-          </h1>
-        </div>
-        <hr class="h-[1px] w-full border-none bg-gray-300" />
-
-        <div
-          class="mt-[20px] flex items-center justify-between xl:mt-[30px] 2xl:mt-[48px]"
-        >
-          <h1
-            class="pl-[2%] font-Light text-[20px] xl:text-[28px] 2xl:text-[40px]"
-          >
-            Indoor Painting
-          </h1>
-          <select
-            name=""
-            id=""
-            class="border-2 border-secondaryText bg-transparent px-4 py-2 font-Light text-[14px] outline-none xl:text-[16px] 2xl:text-[18px]"
-          >
-            <option
-              class="bg-transparent bg-gradient-angleInvert text-[14px] text-black xl:text-[16px] 2xl:text-[18px]"
-              value=""
-            >
-              Interior Wall Painting
-            </option>
-          </select>
-        </div>
-
-        <div
-          class="mt-[32px] grid grid-cols-1 gap-6 xl:grid-cols-2 xl:gap-[40px] 2xl:grid-cols-2 2xl:gap-[40px]"
-        >
-          <div
-            class="relative flex h-[200px] cursor-pointer items-end bg-[url('./Images/Project/project1.png')] text-white transition-transform xl:h-[300px] 2xl:h-[350px]"
-          >
-            <div
-              class="absolute bottom-0 left-0 right-0 top-0 flex w-full items-end justify-between bg-gradient-angle-hover px-[32px] pb-[32px] pt-[48px] opacity-0 transition-all duration-500 hover:scale-95 hover:opacity-90"
-            >
-              <h2 class="font-Book text-[16px] xl:text-[20px] 2xl:text-[30px]">
-                Project Name
-              </h2>
-              <div class="icon text-[40px]">
-                <i class="ri-arrow-right-up-line"></i>
-              </div>
-            </div>
-          </div>
-          <div
-            class="relative flex h-[200px] cursor-pointer items-end bg-[url('./Images/Project/project2.png')] text-white transition-transform xl:h-[300px] 2xl:h-[350px]"
-          >
-            <div
-              class="absolute bottom-0 left-0 right-0 top-0 flex w-full items-end justify-between bg-gradient-angle-hover px-[32px] pb-[32px] pt-[48px] opacity-0 transition-all duration-500 hover:scale-95 hover:opacity-90"
-            >
-              <h2 class="font-Book text-[16px] xl:text-[20px] 2xl:text-[30px]">
-                Project Name
-              </h2>
-              <div class="icon text-[40px]">
-                <i class="ri-arrow-right-up-line"></i>
-              </div>
-            </div>
-          </div>
-          <div
-            class="relative flex h-[200px] cursor-pointer items-end bg-[url('./Images/Project/project3.png')] text-white transition-transform xl:h-[300px] 2xl:h-[350px]"
-          >
-            <div
-              class="absolute bottom-0 left-0 right-0 top-0 flex w-full items-end justify-between bg-gradient-angle-hover px-[32px] pb-[32px] pt-[48px] opacity-0 transition-all duration-500 hover:scale-95 hover:opacity-90"
-            >
-              <h2 class="font-Book text-[16px] xl:text-[20px] 2xl:text-[30px]">
-                Project Name
-              </h2>
-              <div class="icon text-[40px]">
-                <i class="ri-arrow-right-up-line"></i>
-              </div>
-            </div>
-          </div>
-          <div
-            class="relative flex h-[200px] cursor-pointer items-end bg-[url('./Images/Project/Project4.png')] text-white transition-transform xl:h-[300px] 2xl:h-[350px]"
-          >
-            <div
-              class="absolute bottom-0 left-0 right-0 top-0 flex w-full items-end justify-between bg-gradient-angle-hover px-[32px] pb-[32px] pt-[48px] opacity-0 transition-all duration-500 hover:scale-95 hover:opacity-90"
-            >
-              <h2 class="font-Book text-[16px] xl:text-[20px] 2xl:text-[30px]">
-                Project Name
-              </h2>
-              <div class="icon text-[40px]">
-                <i class="ri-arrow-right-up-line"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- End Project-Section -->
-
-    <!-- Why You Choose Section -->
-
-    <section
-      class="relative z-10 min-h-[80vh] w-[100%] overflow-hidden bg-bgGradient py-[80px] xl:min-h-[100vh] xl:py-[115px] 2xl:min-h-[100vh] 2xl:py-[115px]"
-    >
-      <div>
-        <img
-          class="absolute right-[-40%] top-[48%] -z-10 xl:right-[-20%] xl:top-0 xl:h-[120%] xl:object-cover 2xl:right-[-20%] 2xl:top-0 2xl:h-[120%]"
-          src="./Images/Home/bg-home.png"
-          alt=""
-        />
-      </div>
-
-      <div class="container mx-auto">
-        <div class="text-white">
-          <h5
-            class="mb-[12px] w-fit pl-[2%] font-Libre text-gray-300 xl:text-[14px] 2xl:text-[20px]"
-          >
-            Why Choose us
-          </h5>
-          <hr
-            class="my-3 h-[4px] w-[100px] border-none bg-white xl:my-4 2xl:my-6"
-          />
-          <h1
-            class="mb-[10px] pl-[2%] font-Light text-[30px] leading-8 xl:text-[45px] xl:leading-[50px] 2xl:text-[70px] 2xl:leading-[70px]"
-          >
-            Why <span class="font-Book">Artflare</span> is Called the
-            <span class="font-Book"
-              >Best Painting <br />
-              Contractors</span
-            >
-            in Kolkata
-          </h1>
-          <p
-            class="pl-[2%] text-[14px] xl:mt-[15px] xl:text-[16px] 2xl:mt-[20px] 2xl:text-[18px]"
-          >
-            While choosing Artflare for your home color paint solution, we
-            extend our hand to support your dream and offer our excellence and
-            expertise.
-          </p>
-        </div>
-
-        <div
-          class="custom-scrollbar z-[-5] mt-[60px] flex gap-1 px-[1rem] xl:overflow-x-auto 2xl:items-center 2xl:justify-center"
-        >
-          <div
-            class="h-[270px] min-w-[85%] rounded-md bg-[#fffcee] px-[38px] py-[40px] xl:min-w-[290px] 2xl:h-[450px] 2xl:min-w-[290px] 2xl:px-[38px] 2xl:py-[40px]"
-          >
-            <img src="./Images/icon/st1.png" alt="" />
-            <h4
-              class="mb-[20px] mt-[10px] font-Book text-[18px] leading-tight xl:text-[20px] 2xl:text-[30px]"
-            >
-              Experienced Professionals
-            </h4>
-            <p class="font-Light text-[14px] xl:text-[16px] 2xl:text-[18px]">
-              Our
-              <span class="font-Book">skilled craftsmen and painters</span> are
-              always up for delivering the
-              <span class="font-Book">most aesthetic result.</span> We eye for
-              detail that results in a flawless finish.
-            </p>
-          </div>
-          <div
-            class="h-[270px] min-w-[85%] rounded-md bg-[#f3ffe5] px-[38px] py-[40px] xl:min-w-[290px] 2xl:h-[450px] 2xl:min-w-[290px]"
-          >
-            <img src="./Images/icon/St2.png" alt="" />
-            <h4
-              class="mb-[20px] mt-[10px] font-Book text-[18px] leading-tight xl:text-[20px] 2xl:text-[30px]"
-            >
-              Customized Solution
-            </h4>
-            <p class="font-Light text-[14px] xl:text-[16px] 2xl:text-[18px]">
-              Our solutions are
-              <span class="font-Book">highly customizable</span>, making them
-              fit your imagination based on your unique style. We aim to
-              <span class="font-Book"> personalize</span> your experience.
-            </p>
-          </div>
-          <div
-            class="h-[270px] min-w-[85%] rounded-md bg-[#fffcee] px-[38px] py-[40px] xl:min-w-[290px] 2xl:h-[450px] 2xl:min-w-[290px]"
-          >
-            <img src="./Images/icon/St3.png" alt="" />
-            <h4
-              class="mb-[20px] mt-[10px] font-Book text-[18px] leading-tight xl:text-[20px] 2xl:text-[30px]"
-            >
-              Quality Materials
-            </h4>
-            <p class="font-Light text-[14px] xl:text-[16px] 2xl:text-[18px]">
-              <span class="font-Book">High-quality paints</span> and materials
-              used by <span class="font-Book">Artflare </span> make us one of
-              the most reliable home painting companies in Kolkata.
-            </p>
-          </div>
-          <div
-            class="h-[270px] min-w-[85%] rounded-md bg-[#f3ffe5] px-[38px] py-[40px] xl:min-w-[290px] 2xl:h-[450px] 2xl:min-w-[290px]"
-          >
-            <img src="./Images/icon/St4.png" alt="" />
-            <h4
-              class="mb-[20px] mt-[10px] font-Book text-[18px] leading-tight xl:text-[20px] 2xl:text-[30px]"
-            >
-              Experienced Professionals
-            </h4>
-            <p class="font-Light text-[14px] xl:text-[16px] 2xl:text-[18px]">
-              Our
-              <span class="font-Book">skilled craftsmen and painters</span> are
-              always up for delivering the
-              <span class="font-Book">most aesthetic result.</span> We eye for
-              detail that results in a flawless finish.
-            </p>
-          </div>
-          <div
-            class="h-[270px] min-w-[85%] rounded-md bg-[#fffcee] px-[38px] py-[40px] xl:min-w-[290px] 2xl:h-[450px] 2xl:min-w-[290px]"
-          >
-            <img src="./Images/icon/st5.png" alt="" />
-            <h4
-              class="mb-[20px] mt-[10px] font-Book text-[18px] leading-tight xl:text-[20px] 2xl:text-[30px]"
-            >
-              Experienced Professionals
-            </h4>
-            <p class="font-Light text-[14px] xl:text-[16px] 2xl:text-[18px]">
-              Our
-              <span class="font-Book">skilled craftsmen and painters</span> are
-              always up for delivering the
-              <span class="font-Book">most aesthetic result.</span> We eye for
-              detail that results in a flawless finish.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- End Why You Choose Section -->
-
-    <!-- How We do -->
-
-    <section
-      class="min-h-[80vh] w-[100%] bg-[url('./Images/BG/bg3.png')] bg-cover py-[80px] text-white xl:min-h-[100vh] xl:bg-cover xl:py-[115px] 2xl:min-h-[100vh] 2xl:bg-cover 2xl:py-[115px]"
-    >
-      <div class="container mx-auto">
-        <h5
-          class="mb-[12px] w-fit pl-[2%] font-Libre text-gray-300 xl:text-[14px] 2xl:text-[20px]"
-        >
-          How we do
-        </h5>
-        <hr class="h-[4px] w-[100px] border-none bg-white xl:my-4 2xl:my-6" />
-        <h1
-          class="pl-[2%] font-Light text-[30px] xl:text-[45px] xl:leading-[50px] 2xl:text-[70px] 2xl:leading-[70px]"
-        >
-          Interior Design & Decoration
-        </h1>
-        <p
-          class="mt-[10px] pl-[2%] font-Book text-[14px] text-[#ecd5c5] xl:text-[16px] 2xl:text-[18px]"
-        >
-          Our interior decoration and design services in Kolkata are customized
-          to <span class="font-Medium">individual requirements</span> and
-          preferences, <br />
-          offering the best-in-class design and renovation that your space
-          demands.
-        </p>
-      </div>
-
-      <div class="container mx-auto mt-[46px]">
-        <ul
-          class="relative flex flex-col gap-[20px] pl-[2%] font-Book xl:flex-row 2xl:flex-row"
-        >
-          <li
-            class="z-[10] flex flex-row gap-2 text-[14px] xl:flex-col xl:text-[16px] 2xl:flex-col 2xl:text-[20px]"
-          >
-            <span
-              class="relative flex h-[40px] w-[40px] items-center justify-center rounded-full border-2 border-dotted border-yellow-500 after:bg-yellow-500 xl:mb-[12px] 2xl:mb-[24px]"
-              >1
-              <span
-                class="absolute top-[135%] h-[25px] w-[2px] -translate-y-1/2 transform bg-yellow-500 xl:left-[100%] xl:top-[50%] xl:h-[2px] xl:w-[45px] 2xl:left-[100%] 2xl:top-[50%] 2xl:h-[2px] 2xl:w-[60px]"
-              ></span>
-            </span>
-            <span
-              >Planning <br />
-              Space
-            </span>
-          </li>
-          <li
-            class="flex flex-row gap-2 text-[14px] xl:flex-col xl:text-[16px] 2xl:flex-col 2xl:text-[20px]"
-          >
-            <span
-              class="relative flex h-[40px] w-[40px] items-center justify-center rounded-full border-2 border-dotted border-yellow-500 xl:mb-[12px] 2xl:mb-[24px]"
-              >2
-              <span
-                class="absolute top-[135%] h-[25px] w-[2px] -translate-y-1/2 transform bg-yellow-500 xl:left-[100%] xl:top-[50%] xl:h-[2px] xl:w-[55px] 2xl:left-[100%] 2xl:top-[50%] 2xl:h-[2px] 2xl:w-[72px]"
-              ></span>
-            </span>
-            <span>
-              Designing <br />
-              Layout
-            </span>
-          </li>
-          <li
-            class="flex flex-row gap-2 text-[14px] xl:flex-col xl:text-[16px] 2xl:flex-col 2xl:text-[20px]"
-          >
-            <span
-              class="relative flex h-[40px] w-[40px] items-center justify-center rounded-full border-2 border-dotted border-yellow-500 xl:mb-[12px] 2xl:mb-[24px]"
-              >3
-              <span
-                class="absolute top-[135%] h-[25px] w-[2px] -translate-y-1/2 transform bg-yellow-500 xl:left-[100%] xl:top-[50%] xl:h-[2px] xl:w-[90px] 2xl:left-[100%] 2xl:top-[50%] 2xl:h-[2px] 2xl:w-[118px]"
-              ></span>
-            </span>
-            <span>
-              Selecting Color <br />
-              and Material
-            </span>
-          </li>
-          <li
-            class="flex flex-row gap-2 text-[14px] xl:flex-col xl:text-[16px] 2xl:flex-col 2xl:text-[20px]"
-          >
-            <span
-              class="relative flex h-[40px] w-[40px] items-center justify-center rounded-full border-2 border-dotted border-yellow-500 xl:mb-[12px] 2xl:mb-[24px]"
-              >4
-              <span
-                class="absolute top-[135%] h-[25px] w-[2px] -translate-y-1/2 transform bg-yellow-500 xl:left-[100%] xl:top-[50%] xl:h-[2px] xl:w-[125px] 2xl:left-[100%] 2xl:top-[50%] 2xl:h-[2px] 2xl:w-[160px]"
-              ></span>
-            </span>
-
-            <span>
-              Furniture and Decor <br />
-              Sourcing
-            </span>
-          </li>
-          <li
-            class="flex flex-row gap-2 text-[14px] xl:flex-col xl:text-[16px] 2xl:flex-col 2xl:text-[20px]"
-          >
-            <span
-              class="relative flex h-[40px] w-[40px] items-center justify-center rounded-full border-2 border-dotted border-yellow-500 xl:mb-[12px] 2xl:mb-[24px]"
-              >5
-              <span
-                class="absolute top-[135%] h-[25px] w-[2px] -translate-y-1/2 transform bg-yellow-500 xl:left-[100%] xl:top-[50%] xl:h-[2px] xl:w-[40px] 2xl:left-[100%] 2xl:top-[50%] 2xl:h-[2px] 2xl:w-[52px]"
-              ></span>
-            </span>
-            <span>
-              Lighting <br />
-              Design
-            </span>
-          </li>
-          <li
-            class="flex flex-row gap-2 text-[14px] xl:flex-col xl:text-[16px] 2xl:flex-col 2xl:text-[20px]"
-          >
-            <span
-              class="relative flex h-[40px] w-[40px] items-center justify-center rounded-full border-2 border-dotted border-yellow-500 xl:mb-[12px] 2xl:mb-[24px]"
-              >6
-              <span
-                class="absolute top-[135%] h-[25px] w-[2px] -translate-y-1/2 transform bg-yellow-500 xl:left-[100%] xl:top-[50%] xl:h-[2px] xl:w-[120px] 2xl:left-[100%] 2xl:top-[50%] 2xl:h-[2px] 2xl:w-[155px]"
-              ></span>
-            </span>
-            <span>
-              3D Renderings and <br />
-              Visualizations
-            </span>
-          </li>
-          <li
-            class="flex flex-row gap-2 text-[14px] xl:flex-col xl:text-[16px] 2xl:flex-col 2xl:text-[20px]"
-          >
-            <span
-              class="relative flex h-[40px] w-[40px] items-center justify-center rounded-full border-2 border-dotted border-yellow-500 xl:mb-[12px] 2xl:mb-[24px]"
-              >7
-              <span
-                class="absolute top-[135%] h-[25px] w-[2px] -translate-y-1/2 transform bg-yellow-500 xl:left-[100%] xl:top-[50%] xl:h-[2px] xl:w-[110px] 2xl:left-[100%] 2xl:top-[50%] 2xl:h-[2px] 2xl:w-[142px]"
-              ></span>
-            </span>
-            <span>
-              Custom Cabinetry <br />
-              and Built-ins
-            </span>
-          </li>
-          <li
-            class="flex flex-row gap-2 text-[14px] xl:flex-col xl:text-[16px] 2xl:flex-col 2xl:text-[20px]"
-          >
-            <span
-              class="flex h-[40px] w-[40px] items-center justify-center rounded-full border-2 border-dotted border-yellow-500 xl:mb-[12px] 2xl:mb-[24px]"
-              >8</span
-            >
-            <span>
-              Project Management <br />
-              and Completion
-            </span>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!--End How We do -->
-
-    <!-- Frequent-Question-Section -->
-    <section
-      class="min-h-[90vh] w-[100%] bg-[#f4f4f4] py-[80px] xl:py-[115px] 2xl:py-[115px]"
-    >
-      <div class="container mx-auto">
-        <h5
-          class="mb-[12px] w-fit bg-gradientText bg-clip-text pl-[2%] font-Libre text-transparent xl:text-[14px] 2xl:text-[20px]"
-        >
-          Question and Answer
-        </h5>
         <hr
-          class="my-3 h-[4px] w-[100px] border-none bg-borderColor xl:my-[4] 2xl:my-6"
-        />
-        <div class="flex items-center justify-between">
-          <div class="flex-1">
-            <h1
-              class="pl-[2%] font-Light text-[30px] leading-8 xl:text-[45px] xl:leading-[50px] 2xl:text-[70px] 2xl:leading-[70px]"
-            >
-              Frequently Asked <span class="font-Book">Questions</span>
-            </h1>
-          </div>
-          <button
-            class="h-[50px] w-[200px] rounded-md bg-gradient-angle font-Medium text-[14px] text-white transition-all duration-500 hover:bg-gradient-angleInvert xl:h-[65px] xl:w-[280px] 2xl:h-[78px] 2xl:w-[340px]"
-          >
-            KNOW MORE? CLICK HERE
-          </button>
-        </div>
-
+          class="my-[20px] h-[2px] w-[100%] border-none bg-secondaryText xl:my-[0] xl:h-[300px] xl:w-[2px] 2xl:my-[0] 2xl:h-[300px] 2xl:w-[2px]" />
         <div
-          class="mt-[60px] flex w-[100%] flex-col gap-[10px] xl:flex-row xl:gap-[20px] 2xl:flex-row 2xl:gap-[70px]"
-        >
-          <div class="h-[100%]">
-            <img
-              class="mt-2 xl:max-w-[90%] 2xl:max-h-[100%]"
-              src="./Images/ques.png"
-              alt=""
-            />
-          </div>
-
-          <div class="xl:w-[50%] 2xl:w-[50%]">
-            <div class="faq p-4 shadow-lg xl:p-3 2xl:p-4">
-              <div
-                class="flex items-center justify-between xl:pt-[18px] 2xl:pt-[24px]"
-              >
-                <h1
-                  class="font-Book text-[16px] xl:text-[18px] 2xl:text-[24px]"
-                >
-                  How long will my exterior painting job take to finish?
-                </h1>
-                <button class="cursor-pointer">
-                  <i class="ri-add-line xl:text-[30px] 2xl:text-[40px]"></i>
-                </button>
-              </div>
-              <div
-                class="ans max-h-[0] overflow-hidden transition-all duration-200"
-              >
-                <p
-                  class="mt-[5px] font-Light text-[14px] xl:text-[16px] 2xl:text-[18px]"
-                >
-                  The timeline to complete your outdoor painting project relies
-                  heavily on your specific requirements as well as variables
-                  like the size of your space and the weather conditions. While
-                  offering the best home painting services in Kolkata, we tend
-                  to take between 3 to 7 days on average to complete a project.
-                </p>
-              </div>
-            </div>
-            <div class="faq p-4 shadow-lg xl:p-3 2xl:p-4">
-              <div
-                class="flex items-center justify-between xl:pt-[18px] 2xl:pt-[24px]"
-              >
-                <h1
-                  class="font-Book text-[16px] xl:text-[18px] 2xl:text-[24px]"
-                >
-                  Do I need to have any preparation before interior painting?
-                </h1>
-                <button class="cursor-pointer">
-                  <i class="ri-add-line xl:text-[30px] 2xl:text-[40px]"></i>
-                </button>
-              </div>
-              <div
-                class="ans max-h-[0] overflow-hidden transition-all duration-200"
-              >
-                <p
-                  class="mt-[5px] font-Light text-[14px] xl:text-[16px] 2xl:text-[18px]"
-                >
-                  The timeline to complete your outdoor painting project relies
-                  heavily on your specific requirements as well as variables
-                  like the size of your space and the weather conditions. While
-                  offering the best home painting services in Kolkata, we tend
-                  to take between 3 to 7 days on average to complete a project.
-                </p>
-              </div>
-            </div>
-            <div class="faq p-4 shadow-lg xl:p-3 2xl:p-4">
-              <div
-                class="flex items-center justify-between xl:pt-[18px] 2xl:pt-[24px]"
-              >
-                <h1
-                  class="font-Book text-[16px] xl:text-[18px] 2xl:text-[24px]"
-                >
-                  Is there any particular paint finish that fits best with
-                  interior walls?
-                </h1>
-                <button class="cursor-pointer">
-                  <i
-                    class="ri-add-line xl:text-[30px] 2xl:text-[40px]"
-                    id="toggleIcon"
-                  ></i>
-                </button>
-              </div>
-              <div
-                class="ans duration-400 max-h-[0] overflow-hidden transition-all"
-              >
-                <p
-                  class="mt-[5px] font-Light text-[14px] xl:text-[16px] 2xl:text-[18px]"
-                >
-                  The timeline to complete your outdoor painting project relies
-                  heavily on your specific requirements as well as variables
-                  like the size of your space and the weather conditions. While
-                  offering the best home painting services in Kolkata, we tend
-                  to take between 3 to 7 days on average to complete a project.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--End Frequent-Question-Section -->
-
-    <!-- Testimonial -->
-
-    <section
-      class="min-h-[70vh] w-[100%] bg-[#f3e8db] py-[80px] xl:py-[115px] 2xl:py-[115px]"
-    >
-      <div class="container mx-auto">
-        <h5
-          class="mb-[12px] w-fit bg-gradientText bg-clip-text pl-[2%] font-Libre text-transparent xl:text-[14px] 2xl:text-[20px]"
-        >
-          Testimonial
-        </h5>
-        <hr
-          class="h-[4px] w-[100px] border-none bg-borderColor xl:my-4 2xl:my-6"
-        />
-        <div class="flex items-center justify-between">
-          <div class="flex-1">
-            <h1
-              class="pl-[2%] font-Light text-[30px] xl:text-[45px] xl:leading-[50px] 2xl:text-[70px] 2xl:leading-[70px]"
-            >
-              Our <span class="font-Book">Happy</span> Clients
+          class="right flex w-full flex-col items-center gap-[30px] text-center xl:w-[65%] xl:flex-row xl:items-start xl:justify-between xl:text-start 2xl:xl:items-start 2xl:w-[65%] 2xl:flex-row 2xl:justify-between 2xl:text-start">
+          <div class="relative">
+            <h1 class="font-Book xl:text-[18px] 2xl:text-[22px]">
+              Quick Links
             </h1>
-            <div
-              class="flex flex-col justify-between xl:mt-[14px] xl:flex-row xl:items-center 2xl:mt-[20px] 2xl:flex-row 2xl:items-center"
-            >
-              <p class="pl-[2%] text-[14px] xl:text-[16px] 2xl:text-[18px]">
-                Every wall has a story – that’s what we believe at Artflare. Our
-                indoor painting services are dedicated <br />to creating a
-                unified blend of your style and personality within the
-                boundaries of your home.
-              </p>
-              <div
-                class="mt-[10px] flex gap-4 self-end pl-[2%] xl:self-start xl:pl-[0] 2xl:self-start 2xl:pl-[0]"
-              >
-                <i
-                  onclick="slideCardPerv(this)"
-                  class="ri-arrow-left-s-line border-2 border-gray-300 px-2 hover:bg-gradient-angle hover:text-white xl:text-[35px] 2xl:text-[50px]"
-                ></i>
-                <i
-                  onclick="slideCardNext(this)"
-                  class="ri-arrow-right-s-line border-2 border-gray-300 px-2 hover:bg-gradient-angle hover:text-white xl:text-[35px] 2xl:text-[50px]"
-                ></i>
-              </div>
+            <div class="relative my-[10px] h-[2px] w-[100px] bg-secondaryText 2xl:my-[15px]">
+              <span
+                class="animate-expand-width ease duration-800 absolute left-0 top-0 h-[2px] w-[0] bg-gradient-angle transition-all">
+              </span>
             </div>
+            <ul class="flex flex-col gap-2 text-[#9fa0b1] xl:text-[16px] 2xl:text-[18px]">
+              <li class="hover:text-white"><a href="#">Home</a></li>
+              <li class="hover:text-white"><a href="#">About Us</a></li>
+              <li class="hover:text-white"><a href="#">Service</a></li>
+              <li class="hover:text-white"><a href="#">Contact</a></li>
+              <li class="hover:text-white"><a href="#">FAQ</a></li>
+              <li class="hover:text-white"><a href="#">Blog</a></li>
+            </ul>
           </div>
-        </div>
-
-        <div class="overflow-hidden">
-          <div
-            class="testimonialCard mt-[20px] flex w-[100%] flex-nowrap gap-[10px] transition-all duration-200 xl:gap-[20px] 2xl:gap-[40px]"
-          >
-            <div
-              class="flex min-w-[100%] flex-col gap-[20px] rounded-md bg-[#ffffff] px-[35px] py-[40px] font-Book shadow-lg xl:h-[300px] xl:min-w-[350px] 2xl:h-[365px] 2xl:min-w-[440px] 2xl:justify-between"
-            >
-              <div>
-                <p class="xl:text-[16px] 2xl:text-[23px]">
-                  Thanks, Artflare for transforming my home to a house I’ve only
-                  watched in movies.
-                </p>
-              </div>
-              <hr />
-              <div class="flex items-center gap-4">
-                <img
-                  class="h-[70px] w-[70px] rounded-full object-fill xl:h-[100px] xl:w-[100px] 2xl:h-[100px] 2xl:w-[100px]"
-                  src="./Images/Profile/profile1.avif"
-                  alt=""
-                />
-                <div class="flex flex-col">
-                  <h1>Kunal Basu</h1>
-                  <p class="font-Light">Businessman</p>
-                  <p class="text-[14px]">⭐⭐⭐⭐⭐</p>
-                </div>
-              </div>
+          <div class="relative">
+            <h1 class="font-Book xl:text-[18px] 2xl:text-[22px]">Services</h1>
+            <div class="relative my-[10px] h-[2px] bg-secondaryText xl:w-[100px] 2xl:my-[15px] 2xl:w-[100px]">
+              <span
+                class="animate-expand-width ease duration-800 absolute left-0 top-0 h-[2px] w-[0] bg-gradient-angle transition-all">
+              </span>
             </div>
-
-            <div
-              class="flex min-w-[100%] flex-col justify-between gap-[20px] rounded-md bg-[#ffffff] px-[35px] py-[40px] font-Book shadow-lg xl:h-[300px] xl:min-w-[350px] 2xl:h-[365px] 2xl:min-w-[440px]"
-            >
-              <div>
-                <p class="xl:text-[16px] 2xl:text-[23px]">
-                  I had a very tight deadline. I didn’t think Artflare would be
-                  able to do it. But they finished the project even before time!
-                  Kudos!
-                </p>
-              </div>
-              <hr />
-              <div class="flex items-center gap-4">
-                <img
-                  class="h-[80px] w-[80px] rounded-full object-fill xl:h-[100px] xl:w-[100px] 2xl:h-[100px] 2xl:w-[100px]"
-                  src="./Images/Profile/profile2.avif"
-                  alt=""
-                />
-                <div class="flex flex-col">
-                  <h1>Somu Basu</h1>
-                  <p class="font-Light">Businessman</p>
-                  <p class="text-[14px]">⭐⭐⭐⭐⭐</p>
-                </div>
-              </div>
+            <ul class="flex flex-col gap-2 text-[#9fa0b1] xl:text-[16px] 2xl:text-[18px]">
+              <li class="hover:text-white">
+                <a href="#">Indoor Painting</a>
+              </li>
+              <li class="hover:text-white">
+                <a href="#">Outdoor Painting</a>
+              </li>
+              <li class="hover:text-white">
+                <a href="#">Two-color Wall Service</a>
+              </li>
+              <li class="hover:text-white">
+                <a href="#">Interrior Decoraction</a>
+              </li>
+            </ul>
+          </div>
+          <div class="relative">
+            <h1 class="font-Book xl:text-[18px] 2xl:text-[22px]">
+              Contact us
+            </h1>
+            <div class="relative my-[10px] h-[2px] w-[100%] bg-secondaryText 2xl:my-[15px]">
+              <span
+                class="animate-expand-width ease duration-800 absolute left-0 top-0 h-[2px] w-[0] bg-gradient-angle transition-all">
+              </span>
             </div>
-            <div
-              class="flex min-w-[100%] flex-col justify-between gap-[20px] rounded-md bg-[#ffffff] px-[35px] py-[40px] font-Book shadow-lg xl:h-[300px] xl:min-w-[350px] 2xl:h-[365px] 2xl:min-w-[440px]"
-            >
-              <div>
-                <p class="xl:text-[16px] 2xl:text-[23px]">
-                  It was an amazing experience with Artflare. I’m blown away
-                  with their expertise and creativity.
-                </p>
-              </div>
-              <hr />
-              <div class="flex items-center gap-4">
-                <img
-                  class="h-[80px] w-[80px] rounded-full object-fill xl:h-[100px] xl:w-[100px] 2xl:h-[100px] 2xl:w-[100px]"
-                  src="./Images/Profile/profile3.avif"
-                  alt=""
-                />
-                <div class="flex flex-col">
-                  <h1>Sonia Paul</h1>
-                  <p class="font-Light">Businessman</p>
-                  <p class="text-[14px]">⭐⭐⭐⭐⭐</p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="flex min-w-[100%] flex-col gap-[20px] rounded-md bg-[#ffffff] px-[35px] py-[40px] font-Book shadow-lg xl:h-[300px] xl:min-w-[350px] 2xl:h-[365px] 2xl:min-w-[440px] 2xl:justify-between"
-            >
-              <div>
-                <p class="xl:text-[16px] 2xl:text-[23px]">
-                  Thanks, Artflare for transforming my home to a house I’ve only
-                  watched in movies.
-                </p>
-              </div>
-              <hr />
-              <div class="flex items-center gap-4">
-                <img
-                  class="h-[80px] w-[80px] rounded-full object-fill xl:h-[100px] xl:w-[100px] 2xl:h-[100px] 2xl:w-[100px]"
-                  src="./Images/Profile/profile4.avif"
-                  alt=""
-                />
-                <div class="flex flex-col">
-                  <h1>Shilpa polley</h1>
-                  <p class="font-Light">Businessman</p>
-                  <p class="text-[14px]">⭐⭐⭐⭐⭐</p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="flex min-w-[100%] flex-col gap-[20px] rounded-md bg-[#ffffff] px-[35px] py-[40px] font-Book shadow-lg xl:h-[300px] xl:min-w-[350px] 2xl:h-[365px] 2xl:min-w-[440px] 2xl:justify-between"
-            >
-              <div>
-                <p class="xl:text-[16px] 2xl:text-[23px]">
-                  Thanks, Artflare for transforming my home to a house I’ve only
-                  watched in movies.
-                </p>
-              </div>
-              <hr />
-              <div class="flex items-center gap-4">
-                <img
-                  class="h-[80px] w-[80px] rounded-full object-fill xl:h-[100px] xl:w-[100px] 2xl:h-[100px] 2xl:w-[100px]"
-                  src="./Images/Profile/profile5.avif"
-                  alt=""
-                />
-                <div class="flex flex-col">
-                  <h1>P Basu</h1>
-                  <p class="font-Light">Businessman</p>
-                  <p class="text-[14px]">⭐⭐⭐⭐⭐</p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="flex min-w-[100%] flex-col gap-[20px] rounded-md bg-[#ffffff] px-[35px] py-[40px] font-Book shadow-lg xl:h-[300px] xl:min-w-[350px] 2xl:h-[365px] 2xl:min-w-[440px] 2xl:justify-between"
-            >
-              <div>
-                <p class="xl:text-[16px] 2xl:text-[23px]">
-                  Thanks, Artflare for transforming my home to a house I’ve only
-                  watched in movies.
-                </p>
-              </div>
-              <hr />
-              <div class="flex items-center gap-4">
-                <img
-                  class="h-[80px] w-[80px] rounded-full object-fill xl:h-[100px] xl:w-[100px] 2xl:h-[100px] 2xl:w-[100px]"
-                  src="./Images/Profile/profile1.avif"
-                  alt=""
-                />
-                <div class="flex flex-col">
-                  <h1>Kunal Basu</h1>
-                  <p class="font-Light">Businessman</p>
-                  <p class="text-[14px]">⭐⭐⭐⭐⭐</p>
-                </div>
-              </div>
-            </div>
+            <ul class="flex flex-col gap-2 text-[#9fa0b1] xl:text-[16px] 2xl:text-[18px]">
+              <li class="2xl-flex-row flex flex-col items-center gap-2 xl:flex-row">
+                <a class="border-gradient flex h-[40px] w-[40px] items-center justify-center border-2 bg-gradientText bg-clip-text text-transparent xl:h-[50px] xl:w-[50px] xl:text-[20px] 2xl:h-[70px] 2xl:w-[70px] 2xl:text-[30px]"
+                  href="#"><i class="fa-solid fa-location-dot"></i></a>
+                <span class="hover:text-white">107 Rabindra sarani Durganagar India <br />
+                  Kolkata 70006</span>
+              </li>
+              <li class="2xl-flex-row flex flex-col items-center gap-2 xl:flex-row">
+                <a class="border-gradient flex h-[40px] w-[40px] items-center justify-center border-2 bg-gradientText bg-clip-text text-transparent xl:h-[50px] xl:w-[50px] xl:text-[20px] 2xl:h-[70px] 2xl:w-[70px] 2xl:text-[30px]"
+                  href="#"><i class="fa-solid fa-envelope"></i></a>
+                <span class="hover:text-white">Info@artflareinterior.com</span>
+              </li>
+              <li class="2xl-flex-row flex flex-col items-center gap-2 xl:flex-row">
+                <a class="border-gradient flex h-[40px] w-[40px] items-center justify-center border-2 bg-gradientText bg-clip-text text-[16px] text-transparent xl:h-[50px] xl:w-[50px] xl:text-[20px] 2xl:h-[70px] 2xl:w-[70px] 2xl:text-[30px]"
+                  href="#"><i class="fa-solid fa-phone"></i></a>
+                <span class="hover:text-white">+91 1234 5678</span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- Blog-section -->
+      <hr
+        class="my-[10px] h-[2px] border-none bg-secondaryText xl:mb-[25px] xl:mt-[60px] 2xl:mb-[30px] 2xl:mt-[75px]" />
 
-    <section
-      class="min-h-[60vh] w-[100%] bg-[#f4f4f4] py-[80px] xl:min-h-[70vh] xl:py-[115px] 2xl:xl:min-h-[70vh] 2xl:py-[115px]"
-    >
-      <div class="container mx-auto">
+      <!-- Subfooter -->
+      <div
+        class="flex w-full flex-col items-center justify-between gap-[10px] xl:flex-row xl:gap-[0px] 2xl:flex-row 2xl:gap-[0px]">
+        <div class="social flex items-center gap-[10px]">
+          <a class="border-gradient flex h-[40px] w-[40px] items-center justify-center border-2 bg-gradientText bg-clip-text text-[16px] text-transparent hover:bg-gradient-angle hover:bg-clip-content hover:text-white xl:h-[50px] xl:w-[50px] xl:text-[20px] 2xl:h-[70px] 2xl:w-[70px] 2xl:text-[30px]"
+            href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a class="border-gradient flex h-[40px] w-[40px] items-center justify-center border-2 bg-gradientText bg-clip-text text-[16px] text-transparent hover:bg-gradient-angle hover:bg-clip-content hover:text-white xl:h-[50px] xl:w-[50px] xl:text-[20px] 2xl:h-[70px] 2xl:w-[70px] 2xl:text-[30px]"
+            href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a class="border-gradient flex h-[40px] w-[40px] items-center justify-center border-2 bg-gradientText bg-clip-text text-[16px] text-transparent hover:bg-gradient-angle hover:bg-clip-content hover:text-white xl:h-[50px] xl:w-[50px] xl:text-[20px] 2xl:h-[70px] 2xl:w-[70px] 2xl:text-[30px]"
+            href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+
         <div>
-          <h5
-            class="w-fit bg-gradientText bg-clip-text pl-[2%] font-Libre text-transparent xl:text-[14px] 2xl:text-[20px]"
-          >
-            We are in news
-          </h5>
-          <hr
-            class="my-3 h-[4px] w-[100px] border-none bg-borderColor xl:my-4 2xl:my-6"
-          />
-          <div class="flex items-center justify-between">
-            <div class="flex w-full justify-between">
-              <h1
-                class="pl-[2%] font-Light text-[30px] leading-8 xl:text-[45px] xl:leading-[50px] 2xl:text-[70px] 2xl:leading-[70px]"
-              >
-                Our Latest<span class="font-Book"> Blog </span>
-              </h1>
-              <button
-                class="h-[50px] w-[200px] rounded-md bg-gradient-angle font-Medium text-[14px] tracking-wider text-white transition-all duration-300 hover:bg-gradient-angleInvert xl:h-[65px] xl:w-[280px] 2xl:h-[78px] 2xl:w-[340px]"
-              >
-                VIEW ALL POST
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="mt-[60px] flex h-full w-full flex-col items-center justify-between gap-[10px] text-white xl:flex-row 2xl:flex-row 2xl:gap-[40px]"
-        >
-          <div
-            class="group relative h-[200px] w-full cursor-pointer bg-[url('./Images/Bottom/blog1.png')] bg-cover bg-center px-[32px] pb-[20px] xl:h-[300px] xl:w-[550px] xl:pb-[32px] xl:pt-[48px] 2xl:h-[390px] 2xl:w-[745px] 2xl:pb-[32px] 2xl:pt-[48px]"
-          >
-            <div
-              class="flex h-full w-full items-end justify-between group-hover:opacity-0"
-            >
-              <div class="">
-                <p>September 15, 2023</p>
-                <h2
-                  class="font-Book text-[16px] tracking-wide xl:text-[20px] 2xl:text-[30px]"
-                >
-                  Affordable comfort for your family
-                </h2>
-              </div>
-              <div class="icon text-[20px] xl:text-[30px] 2xl:text-[40px]">
-                <i class="ri-arrow-right-up-line"></i>
-              </div>
-            </div>
-            <div
-              class="absolute bottom-0 left-0 right-0 top-0 w-full bg-gradient-angle-hover p-[20px] opacity-0 transition-all duration-700 hover:scale-100 hover:opacity-90 xl:px-[32px] xl:pb-[32px] xl:pt-[48px] 2xl:px-[32px] 2xl:pb-[32px] 2xl:pt-[48px]"
-            >
-              <div class="">
-                <p>September 15, 2023</p>
-                <h2
-                  class="font-Book text-[16px] tracking-wide xl:text-[20px] 2xl:text-[30px]"
-                >
-                  Affordable comfort for your family
-                </h2>
-                <p class="xl:twxt-[16px] font-Book text-[14px] 2xl:text-[18px]">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s,
-                </p>
-              </div>
-              <div
-                class="icon absolute bottom-10 right-10 text-[20px] xl:text-[30px] 2xl:text-[40px]"
-              >
-                <i class="ri-arrow-right-up-line"></i>
-              </div>
-            </div>
-          </div>
-          <div
-            class="group relative h-[200px] w-full bg-[url('./Images/Bottom/Blog2.png')] bg-cover bg-center px-[32px] pb-[20px] xl:h-[300px] xl:w-[550px] xl:pb-[32px] xl:pt-[48px] 2xl:h-[390px] 2xl:w-[745px] 2xl:pb-[32px] 2xl:pt-[48px]"
-          >
-            <div
-              class="flex h-full w-full items-end justify-between group-hover:opacity-0"
-            >
-              <div>
-                <p>September 18, 2023</p>
-                <h2
-                  class="font-Book text-[16px] tracking-wide xl:text-[20px] 2xl:text-[30px]"
-                >
-                  Building a Shield Against Moisture
-                </h2>
-              </div>
-              <div class="icon text-[20px] xl:text-[30px] 2xl:text-[40px]">
-                <i class="ri-arrow-right-up-line"></i>
-              </div>
-            </div>
-            <div
-              class="absolute bottom-0 left-0 right-0 top-0 w-full bg-gradient-angle-hover p-[20px] opacity-0 transition-all duration-700 hover:scale-100 hover:opacity-90 xl:px-[32px] xl:pb-[32px] xl:pt-[48px] 2xl:px-[32px] 2xl:pb-[32px] 2xl:pt-[48px]"
-            >
-              <div class="">
-                <p>September 15, 2023</p>
-                <h2
-                  class="font-Book text-[16px] tracking-wide xl:text-[20px] 2xl:text-[30px]"
-                >
-                  Affordable comfort for your family
-                </h2>
-                <p class="font-Book text-[14px] xl:text-[16px] 2xl:text-[18px]">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s,
-                </p>
-              </div>
-              <div
-                class="icon absolute bottom-10 right-10 text-[20px] xl:text-[30px] 2xl:text-[40px]"
-              >
-                <i class="ri-arrow-right-up-line"></i>
-              </div>
-            </div>
-          </div>
+          <p class="text-center font-Book text-white xl:text-start 2xl:text-start">
+            Artflare Interior © 2023. All Rights Reserved. | Privacy Policy |
+            Terms & Conditions
+          </p>
         </div>
       </div>
-    </section>
-    <!-- Blog-section -->
+    </div>
+  </footer>
 
-    <!-- Contact-Us -->
+  <script>
+    const faqs = document.querySelectorAll(".faq");
 
-    <section
-      class="w-[100%] bg-[url('./Images/BG/BottomBg.png')] bg-center py-[80px] xl:py-[115px] 2xl:h-[500px] 2xl:py-[115px]"
-    >
-      <div class="container mx-auto">
-        <div class="flex justify-between">
-          <div class="w-full pl-[2%] text-white">
-            <h5
-              class="mb-[12px] w-fit pl-[2%] font-Libre text-[14px] text-[#ffe4f2] xl:text-[14px] 2xl:text-[20px]"
-            >
-              Contact Us
-            </h5>
-            <hr
-              class="my-3 h-[4px] w-[100px] border-none bg-white xl:my-4 2xl:my-6"
-            />
-            <h1
-              class="font-Light xl:text-[45px] xl:leading-[50px] 2xl:text-[70px] 2xl:leading-[70px]"
-            >
-              Keep in<span class="font-Book"> Touch </span>
-            </h1>
-            <p
-              class="font-Book text-[14px] xl:mt-[16px] xl:text-[16px] 2xl:mt-[32px] 2xl:text-[18px]"
-            >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-          </div>
-
-          <div class="right-sec w-[100%]">
-            <form action="">
-              <div
-                class="flex w-full flex-col justify-between gap-10 text-white xl:flex-row 2xl:flex-row"
-              >
-                <div class="flex flex-1 flex-col">
-                  <input
-                    class="border-b-2 bg-transparent outline-none placeholder:text-[16px] focus:border-borderColor xl:pb-1 xl:pl-1 xl:text-[18px] xl:placeholder:text-[14px] 2xl:pb-2 2xl:pl-2 2xl:text-[24px] 2xl:placeholder:text-[16px]"
-                    type="text"
-                    name="Name"
-                    id=""
-                    placeholder="Enter your Name"
-                  />
-                  <input
-                    class="mt-4 border-b-2 bg-transparent outline-none placeholder:text-[16px] focus:border-borderColor xl:pb-1 xl:pl-1 xl:text-[18px] xl:placeholder:text-[14px] 2xl:pb-2 2xl:pl-2 2xl:text-[24px] 2xl:placeholder:text-[16px]"
-                    type="text"
-                    name="Number"
-                    id=""
-                    placeholder="Enter your Number"
-                  />
-                  <input
-                    class="mt-4 border-b-2 bg-transparent outline-none placeholder:text-[16px] focus:border-borderColor xl:pb-1 xl:pl-1 xl:text-[18px] xl:placeholder:text-[14px] 2xl:pb-2 2xl:pl-2 2xl:text-[24px] 2xl:placeholder:text-[16px]"
-                    type="email"
-                    name="Email"
-                    id=""
-                    placeholder="Enter your Email"
-                  />
-                </div>
-                <div class="flex flex-1 flex-col">
-                  <textarea
-                    class="mt-4 resize-none border-b-2 bg-transparent outline-none focus:border-borderColor xl:h-[115px] xl:pb-1 xl:pl-1 xl:text-[18px] xl:placeholder:text-[14px] 2xl:h-[155px] 2xl:pb-2 2xl:pl-2 2xl:text-[24px] 2xl:placeholder:text-[16px]"
-                    name="textarea"
-                    placeholder="Message"
-                  ></textarea>
-                </div>
-              </div>
-              <button
-                class="mt-[25px] h-[50px] w-[250px] cursor-pointer rounded-md bg-gradient-angle2 font-Medium text-[14px] text-white transition-all duration-500 hover:bg-gradient-angle2Invert xl:mt-[24px] xl:h-[65px] xl:w-[280px] 2xl:mt-[32px] 2xl:h-[70px] 2xl:w-[320px]"
-              >
-                SEND MESSAGE
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Contact-Us -->
-
-    <!-- footer -->
-    <footer
-      class="min-h-[200vh] w-[100%] bg-footerGradient pt-[100px] xl:min-h-[575px] 2xl:min-h-[575px]"
-    >
-      <div class="container mx-auto">
-        <div
-          class="flex h-full w-full flex-col justify-between text-center text-white xl:flex-row xl:text-start 2xl:flex-row 2xl:text-start"
-        >
-          <div class="left w-[100%] xl:w-[25%] 2xl:w-[25%]">
-            <div
-              class="flex w-full justify-center xl:justify-start 2xl:justify-start"
-            >
-              <img class="" src="./Images/Logo (1).png" alt="" />
-            </div>
-            <h1 class="mt-[10px] font-Book xl:text-[18px] 2xl:text-[24px]">
-              We build safety & comfort for you
-            </h1>
-            <p class="font-Book text-[#9fa0b1] xl:text-[14px] 2xl:text-[16px]">
-              After providing interior and exterior home color paint solutions
-              to our clients across Kolkata for a decade, Artflare has fostered
-              the ability to transform a space with the magic of color. <br />
-              <br />
-              From houses to commercial properties, we are the most reliable
-              house painting contractors in Kolkata equipped to transform your
-              space while giving it a character.
-            </p>
-          </div>
-          <hr
-            class="my-[20px] h-[2px] w-[100%] border-none bg-secondaryText xl:my-[0] xl:h-[300px] xl:w-[2px] 2xl:my-[0] 2xl:h-[300px] 2xl:w-[2px]"
-          />
-          <div
-            class="right flex w-full flex-col items-center gap-[30px] text-center xl:w-[65%] xl:flex-row xl:items-start xl:justify-between xl:text-start 2xl:xl:items-start 2xl:w-[65%] 2xl:flex-row 2xl:justify-between 2xl:text-start"
-          >
-            <div class="relative">
-              <h1 class="font-Book xl:text-[18px] 2xl:text-[22px]">
-                Quick Links
-              </h1>
-              <div
-                class="relative my-[10px] h-[2px] w-[100px] bg-secondaryText 2xl:my-[15px]"
-              >
-                <span
-                  class="animate-expand-width ease duration-800 absolute left-0 top-0 h-[2px] w-[0] bg-gradient-angle transition-all"
-                >
-                </span>
-              </div>
-              <ul
-                class="flex flex-col gap-2 text-[#9fa0b1] xl:text-[16px] 2xl:text-[18px]"
-              >
-                <li class="hover:text-white"><a href="#">Home</a></li>
-                <li class="hover:text-white"><a href="#">About Us</a></li>
-                <li class="hover:text-white"><a href="#">Service</a></li>
-                <li class="hover:text-white"><a href="#">Contact</a></li>
-                <li class="hover:text-white"><a href="#">FAQ</a></li>
-                <li class="hover:text-white"><a href="#">Blog</a></li>
-              </ul>
-            </div>
-            <div class="relative">
-              <h1 class="font-Book xl:text-[18px] 2xl:text-[22px]">Services</h1>
-              <div
-                class="relative my-[10px] h-[2px] bg-secondaryText xl:w-[100px] 2xl:my-[15px] 2xl:w-[100px]"
-              >
-                <span
-                  class="animate-expand-width ease duration-800 absolute left-0 top-0 h-[2px] w-[0] bg-gradient-angle transition-all"
-                >
-                </span>
-              </div>
-              <ul
-                class="flex flex-col gap-2 text-[#9fa0b1] xl:text-[16px] 2xl:text-[18px]"
-              >
-                <li class="hover:text-white">
-                  <a href="#">Indoor Painting</a>
-                </li>
-                <li class="hover:text-white">
-                  <a href="#">Outdoor Painting</a>
-                </li>
-                <li class="hover:text-white">
-                  <a href="#">Two-color Wall Service</a>
-                </li>
-                <li class="hover:text-white">
-                  <a href="#">Interrior Decoraction</a>
-                </li>
-              </ul>
-            </div>
-            <div class="relative">
-              <h1 class="font-Book xl:text-[18px] 2xl:text-[22px]">
-                Contact us
-              </h1>
-              <div
-                class="relative my-[10px] h-[2px] w-[100%] bg-secondaryText 2xl:my-[15px]"
-              >
-                <span
-                  class="animate-expand-width ease duration-800 absolute left-0 top-0 h-[2px] w-[0] bg-gradient-angle transition-all"
-                >
-                </span>
-              </div>
-              <ul
-                class="flex flex-col gap-2 text-[#9fa0b1] xl:text-[16px] 2xl:text-[18px]"
-              >
-                <li
-                  class="2xl-flex-row flex flex-col items-center gap-2 xl:flex-row"
-                >
-                  <a
-                    class="border-gradient flex h-[40px] w-[40px] items-center justify-center border-2 bg-gradientText bg-clip-text text-transparent xl:h-[50px] xl:w-[50px] xl:text-[20px] 2xl:h-[70px] 2xl:w-[70px] 2xl:text-[30px]"
-                    href="#"
-                    ><i class="fa-solid fa-location-dot"></i
-                  ></a>
-                  <span class="hover:text-white"
-                    >107 Rabindra sarani Durganagar India <br />
-                    Kolkata 70006</span
-                  >
-                </li>
-                <li
-                  class="2xl-flex-row flex flex-col items-center gap-2 xl:flex-row"
-                >
-                  <a
-                    class="border-gradient flex h-[40px] w-[40px] items-center justify-center border-2 bg-gradientText bg-clip-text text-transparent xl:h-[50px] xl:w-[50px] xl:text-[20px] 2xl:h-[70px] 2xl:w-[70px] 2xl:text-[30px]"
-                    href="#"
-                    ><i class="fa-solid fa-envelope"></i
-                  ></a>
-                  <span class="hover:text-white"
-                    >Info@artflareinterior.com</span
-                  >
-                </li>
-                <li
-                  class="2xl-flex-row flex flex-col items-center gap-2 xl:flex-row"
-                >
-                  <a
-                    class="border-gradient flex h-[40px] w-[40px] items-center justify-center border-2 bg-gradientText bg-clip-text text-[16px] text-transparent xl:h-[50px] xl:w-[50px] xl:text-[20px] 2xl:h-[70px] 2xl:w-[70px] 2xl:text-[30px]"
-                    href="#"
-                    ><i class="fa-solid fa-phone"></i
-                  ></a>
-                  <span class="hover:text-white">+91 1234 5678</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <hr
-          class="my-[10px] h-[2px] border-none bg-secondaryText xl:mb-[25px] xl:mt-[60px] 2xl:mb-[30px] 2xl:mt-[75px]"
-        />
-
-        <!-- Subfooter -->
-        <div
-          class="flex w-full flex-col items-center justify-between gap-[10px] xl:flex-row xl:gap-[0px] 2xl:flex-row 2xl:gap-[0px]"
-        >
-          <div class="social flex items-center gap-[10px]">
-            <a
-              class="border-gradient flex h-[40px] w-[40px] items-center justify-center border-2 bg-gradientText bg-clip-text text-[16px] text-transparent hover:bg-gradient-angle hover:bg-clip-content hover:text-white xl:h-[50px] xl:w-[50px] xl:text-[20px] 2xl:h-[70px] 2xl:w-[70px] 2xl:text-[30px]"
-              href="#"
-              ><i class="fa-brands fa-facebook-f"></i
-            ></a>
-            <a
-              class="border-gradient flex h-[40px] w-[40px] items-center justify-center border-2 bg-gradientText bg-clip-text text-[16px] text-transparent hover:bg-gradient-angle hover:bg-clip-content hover:text-white xl:h-[50px] xl:w-[50px] xl:text-[20px] 2xl:h-[70px] 2xl:w-[70px] 2xl:text-[30px]"
-              href="#"
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
-            <a
-              class="border-gradient flex h-[40px] w-[40px] items-center justify-center border-2 bg-gradientText bg-clip-text text-[16px] text-transparent hover:bg-gradient-angle hover:bg-clip-content hover:text-white xl:h-[50px] xl:w-[50px] xl:text-[20px] 2xl:h-[70px] 2xl:w-[70px] 2xl:text-[30px]"
-              href="#"
-              ><i class="fa-brands fa-x-twitter"></i
-            ></a>
-          </div>
-
-          <div>
-            <p
-              class="text-center font-Book text-white xl:text-start 2xl:text-start"
-            >
-              Artflare Interior © 2023. All Rights Reserved. | Privacy Policy |
-              Terms & Conditions
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <script>
-      const faqs = document.querySelectorAll(".faq");
-
-      faqs.forEach((faq) => {
-        faq.addEventListener("click", () => {
-          faq.classList.toggle("active");
-          faq.firstElementChild.classList.toggle("text-red-500");
-        });
+    faqs.forEach((faq) => {
+      faq.addEventListener("click", () => {
+        faq.classList.toggle("active");
+        faq.firstElementChild.classList.toggle("text-red-500");
       });
+    });
 
-      const cardSec = document.querySelector(".testimonialCard");
+    const cardSec = document.querySelector(".testimonialCard");
 
-      let tx = 0;
+    let tx = 0;
 
-      const slideCardNext = (elm) => {
-        const viewportWidth = document.documentElement.clientWidth;
-        console.log(viewportWidth);
-        if (viewportWidth < 500) {
-          if (tx > -510) {
-            tx -= 103;
-          }
-        } else {
-          if (tx > -96) {
-            tx -= 32;
-          }
+    const slideCardNext = (elm) => {
+      const viewportWidth = document.documentElement.clientWidth;
+      console.log(viewportWidth);
+      if (viewportWidth < 500) {
+        if (tx > -510) {
+          tx -= 103;
         }
-
-        cardSec.style.transform = `translateX(${tx}%)`;
-      };
-      window.addEventListener("resize", slideCardNext);
-      const slideCardPerv = (elm) => {
-        const viewportWidth = document.documentElement.clientWidth;
-        if (viewportWidth < 500) {
-          if (tx < 0) {
-            tx += 103;
-          }
-        } else {
-          if (tx < 0) {
-            tx += 32;
-          }
+      } else {
+        if (tx > -96) {
+          tx -= 32;
         }
+      }
 
-        cardSec.style.transform = `translateX(${tx}%)`;
-      };
+      cardSec.style.transform = `translateX(${tx}%)`;
+    };
+    window.addEventListener("resize", slideCardNext);
+    const slideCardPerv = (elm) => {
+      const viewportWidth = document.documentElement.clientWidth;
+      if (viewportWidth < 500) {
+        if (tx < 0) {
+          tx += 103;
+        }
+      } else {
+        if (tx < 0) {
+          tx += 32;
+        }
+      }
 
-      // function toggleAnswer(element) {
-      //   var ans = element.parentElement.nextElementSibling;
-      //   var ques = element.parentElement;
-      //   ques.classList.toggle('text-red-500')
+      cardSec.style.transform = `translateX(${tx}%)`;
+    };
 
-      //   ans.classList.toggle('hidden')
-      //   var icon = document.getElementById('toggleIcon');
-      //   icon.classList.toggle('add-line');
-      //   icon.classList.toggle('subtract-line');
-      // }
-    </script>
-  </body>
+    // function toggleAnswer(element) {
+    //   var ans = element.parentElement.nextElementSibling;
+    //   var ques = element.parentElement;
+    //   ques.classList.toggle('text-red-500')
+
+    //   ans.classList.toggle('hidden')
+    //   var icon = document.getElementById('toggleIcon');
+    //   icon.classList.toggle('add-line');
+    //   icon.classList.toggle('subtract-line');
+    // }
+
+    const navList = document.querySelector(".navlist")
+
+
+    const handleNav = () => {
+
+      navList.classList.toggle('active')
+    }
+
+
+
+  </script>
+</body>
+
 </html>
